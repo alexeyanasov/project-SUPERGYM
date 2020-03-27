@@ -1,0 +1,47 @@
+@import "mixins.scss";
+@import "vars.scss";
+
+.trainer {
+  padding: 60px 0 120px;
+
+  @media (max-width: $width_viewport_tablet) {
+    padding: 50px 0 100px;
+  }
+
+  @media (max-width: $width_viewport_mobile) {
+    padding: 25px 0 70px;
+  }
+}
+
+.trainer__inner {
+  @include inner;
+
+  position: relative;
+
+  & h2 {
+    @include heading_h2;
+
+    margin: 0 0 50px;
+    padding: 0 0 0 20px;
+
+    font-size: $font_size_h2_desktop_s;
+    line-height: $line_height_h2_desktop_s;
+    font-family: $font_family_second_base, $font_family_extra;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+
+    @media (max-width: $width_viewport_tablet) {
+      margin: 0 0 41px;
+      padding: 0;
+
+      font-size: $font_size_h2_tablet_s;
+      text-align: center;
+    }
+
+    @media (max-width: $width_viewport_mobile) {
+      margin: 0 0 43px;
+
+      font-size: $font_size_h2_mobile_s;
+    }
+  }
+}

@@ -1,0 +1,11 @@
+body {
+  font-weight: $font_weight_normal;
+  font-size: $font_size_base;
+  line-height: $line_height;
+  font-family: $font_family_base, $font_family_extra;
+  color: $color_blue_midnight;
+}
+
+a {
+  text-decoration: none;
+}

@@ -1,0 +1,84 @@
+@import "mixins.scss";
+@import "vars.scss";
+
+.button-slider {
+  position: absolute;
+  top: 63%;
+  z-index: 100;
+
+  width: 25px;
+  min-height: 40px;
+  padding: 0;
+
+  background-color: transparent;
+  border: none;
+  transform: translateY(-50%);
+  cursor: pointer;
+
+  @media (max-width: $width_viewport_mobile) {
+    top: 61%;
+  }
+
+  @media (max-width: 420px) {
+    width: 18px;
+    min-height: 20px;
+  }
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &:focus {
+    opacity: 0.5;
+  }
+
+  &--prev {
+    left: -56px;
+
+    background-image: url("../img/icon-arrow-prev.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+
+    @media (max-width: 1280px) {
+      left: -40px;
+    }
+
+    @media (max-width: 1260px) {
+      left: -10px;
+    }
+
+    @media (max-width: $width_viewport_tablet) {
+      left: 40px;
+    }
+
+    @media (max-width: 420px) {
+      left: 13px;
+    }
+  }
+
+  &--next {
+    right: -56px;
+
+    background-image: url("../img/icon-arrow-next.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+
+    @media (max-width: 1280px) {
+      right: -40px;
+    }
+
+    @media (max-width: 1260px) {
+      right: -10px;
+    }
+
+    @media (max-width: $width_viewport_tablet) {
+      right: 40px;
+    }
+
+    @media (max-width: 420px) {
+      right: 13px;
+    }
+  }
+}

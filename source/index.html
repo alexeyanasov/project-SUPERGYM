@@ -1,54 +1,568 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Стартовый шаблон</title>
-  <link rel="stylesheet" href="css/style.css">
+  <title>Fitness center</title>
+  <meta name="description"
+    content="Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья.">
+  <link rel="preload" href="fonts/robotocondensedbold.woff2" as="font" type="font/woff2">
+  <link rel="preload" href="fonts/robotocondensedregular.woff2" as="font" type="font/woff2">
+  <link rel="preload" href="fonts/robotocondensedlight.woff2" as="font" type="font/woff2">
+  <link rel="preload" href="fonts/bebasneuebold.woff2" as="font" type="font/woff2">
+  <link rel="preload" href="fonts/bebasneueregular.woff2" as="font" type="font/woff2">
+  <link rel="preload" href="fonts/robotocondensedbold.woff" as="font" type="font/woff">
+  <link rel="preload" href="fonts/robotocondensedregular.woff" as="font" type="font/woff">
+  <link rel="preload" href="fonts/robotocondensedlight.woff" as="font" type="font/woff">
+  <link rel="preload" href="fonts/bebasneuebold.woff" as="font" type="font/woff">
+  <link rel="preload" href="fonts/bebasneueregular.woff" as="font" type="font/woff">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
+
 <body>
-  <div class="full-wrapper">
-    <div class="main-screen">
-      <div class="main-screen__container">
-        <header class="header">
-          <a class="logo" href="#">Supergym</a>
-          <a class="header__phone" href="tel:88005555555">8-800-555-55-55</a>
-        </header>
-        <div class="promo">
-          <div class="promo__info">
-            <span class="promo__city">Омск</span>
-            <div class="promo__header">
-              <h1>Фитнес центр</h1>
-              <ul>
-                <li>Тренажёрный зал</li>
-                <li>Групповые занятия</li>
-                <li>Кардио-зона</li>
-              </ul>
-            </div>
-            <a class="promo__button scroll-to" href="#membership">Купить абонемент</a>
-          </div>
-          <ul class="promo__social">
-            <li><a href="facebook.com">FB</a></li>
-            <li><a href="vkontakte.ru">VK</a></li>
-            <li><a href="instagram.com">IG</a></li>
+  <div class="sprite visually-hidden">
+    <include src="build/img/sprite_auto.svg"></include>
+  </div>
+
+  <!-- Хедер -->
+
+  <div class="wrapper-header-prime">
+    <header class="header">
+      <div class="header__inner">
+        <div class="header__row">
+          <a href="#" class="header__logo-link" aria-label="Логотип фитнесс-центра Supergym">
+            Supergym
+          </a>
+          <nav class="header__navigation">
+            <a class="header__navigation-link" href="tel:8-800-555-55-55">8-800-555-55-55</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- Блок Prime -->
+
+    <section class="prime">
+      <div class="prime__inner">
+        <span>омск</span>
+        <div class="prime__row prime__row--middle">
+          <ul class="prime__list">
+            <li class="prime__item">Тренажёрный зал</li>
+            <li class="prime__item">Групповые занятия</li>
+            <li class="prime__item">Кардио-зона</li>
+          </ul>
+          <h1>Фитнес центр</h1>
+        </div>
+        <div class="prime__row prime__row--buttom">
+          <button class="btn btn--buy" type="button">Купить
+            абонемент</button>
+          <ul class="prime__list-social">
+            <li class="prime__item-social">
+              <a href="#" class="prime__link-social" aria-label="Фитнесс-центр Орёл в Фейсбуке">
+                fb
+              </a>
+            </li>
+            <li class="prime__item-social">
+              <a href="#" class="prime__link-social" aria-label="Фитнесс-центр Орёл во Вконтакте">
+                vk
+              </a>
+            </li>
+            <li class="prime__item-social">
+              <a href="#" class="prime__link-social" aria-label="Фитнесс-центр Орёл в Инстаграмме">
+                ig
+              </a>
+            </li>
           </ul>
         </div>
       </div>
-    </div>
-    <main>
-      <section class="gym">
-        <div class="gym__info-wrapper">
-          <div class="gym__info">
-            <h2>Тренажёрный зал</h2>
-            <p>Просторный зал площадью 900 кв/м</p>
-            <p>Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.</p>
-            <p>В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также в фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</p>
+    </section>
+
+  </div>
+
+  <main>
+
+    <!-- Блок Тренажёрный зал -->
+
+    <section class="gym">
+      <div class="gym__inner">
+        <div class="gym__content">
+          <h2>Тренажерный зал</h2>
+          <p>Просторный зал площадью 900 кв/м</p>
+          <p>Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья.
+            Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.</p>
+          <p>В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также в фитнес центре есть
+            несколько оборудованных залов для различных видов групповых занятий.</p>
+        </div>
+        <div class="gym__image">
+          <img src="img/gym-desktop@1x.jpg" alt="фото тренажёрного зала" width="660" height="401"
+            srcset="img/gym-desktop@1x.jpg 1x, img/gym-desktop@2x.jpg 2x">
+        </div>
+        <div class="gym__video-wrapper">
+          <video class="gym__video" poster="img/video-gym-desktop@1x.png"></video>
+          <button class="gym__play" aria-label="воспроизвести видео" type="button">
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Блок Абонементы -->
+
+    <section class="subscription">
+      <div class="subscription__inner">
+        <div class="subscription__row">
+          <h2>Абонементы</h2>
+          <ul class="subscription__list">
+            <li class="subscription__item">
+              <button class="subscription__button subscription__button--active" type="button" aria-label="1 месяц">
+                1 месяц
+              </button>
+            </li>
+            <li class="subscription__item">
+              <button class="subscription__button" type="button" aria-label="6 месяцев">
+                6 месяцев
+              </button>
+            </li>
+            <li class="subscription__item">
+              <button class="subscription__button" type="button" aria-label="12 месяцев">
+                12 месяцев
+              </button>
+            </li>
+          </ul>
+        </div>
+        <div class="subscription__content">
+          <section class="subscription__card" tabindex="0">
+            <h3>С тренером</h3>
+            <P>12 занятий</P>
+            <P>5000</P>
+            <a href="#" class="subscription__card-link btn btn--subscription"
+              aria-label="кнопка купить абонемент">купить абонемент</a>
+          </section>
+          <section class="subscription__card" tabindex="0">
+            <h3>Дневной</h3>
+            <P>с 8:00 до 17:00 </P>
+            <P>1700</P>
+            <a href="#" class="subscription__card-link btn btn--subscription"
+              aria-label="кнопка купить абонемент">купить абонемент</a>
+          </section>
+          <section class="subscription__card" tabindex="0">
+            <h3>Полный день</h3>
+            <P>с 8:00 до 22:00 </P>
+            <P>2700</P>
+            <a href="#" class="subscription__card-link btn btn--subscription"
+              aria-label="кнопка купить абонемент">купить абонемент</a>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <!-- Блок Промо -->
+
+    <section class="promo">
+      <div class="promo__inner">
+        <div class="promo__content">
+          <h2>SUPER GAMES</h2>
+          <div class="promo__wrapper">
+            <ul class="promo__list-date">
+              <li class="promo__item promo__item--title">Дата</li>
+              <li class="promo__item promo__item--date">7</li>
+              <li class="promo__item promo__item--month">Марта 2019</li>
+            </ul>
+            <ul class="promo__list-time">
+              <li class="promo__item promo__item--text">Время</li>
+              <li class="promo__item promo__item--time">12:00</li>
+            </ul>
           </div>
-          <div class="gym__image">
-              <img src="" alt="">
+          <p>Ежегодные соревнования по CrossFit</p>
+          <a href="#" class="promo__link btn btn--promo">
+            заполнить заявку
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Блок Тренеры -->
+
+    <section class="trainer">
+      <div class="trainer__inner">
+        <h2>Тренеры</h2>
+        <div id="slider-trainer" class="trainer__content slider-trainer">
+          <button class="button-slider button-slider--prev slider-control-left slider-control" type="button"
+            aria-label="кнопка предыдущий слайд">
+          </button>
+          <ul class="slider-trainer__list slider-wrapper">
+
+            <li class="slider-trainer__item slider-item" tabindex="0">
+              <img src="img/coach-pavlova-desktop@1x.jpg" alt="фото Анна Павлова" width="260" height="294"
+                srcset="img/coach-pavlova-desktop@1x.jpg 1x, img/coach-pavlova-desktop@2x.jpg 2x">
+              <p>Анна Павлова</p>
+              <div class="slider-trainer__card">
+                <p>Анна Павлова</p>
+                <p>CrossFit</p>
+                <ul>
+                  <li>Certified Level 3 Trainer</li>
+                  <li>Победитель чемпионата России по CrossFit</li>
+                  <li>Опыт — 6 лет</li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="slider-trainer__item slider-item" tabindex="0">
+              <img src="img/coach-lavrov-desktop@1x.jpg" alt="фото Алексей Лавров" width="260" height="294"
+                srcset="img/coach-lavrov-desktop@1x.jpg 1x, img/coach-lavrov-desktop@2x.jpg 2x">
+              <p>Алексей Лавров</p>
+              <div class="slider-trainer__card">
+                <p>Алексей Лавров</p>
+                <p>CrossFit</p>
+                <ul>
+                  <li>Certified Level 3 Trainer</li>
+                  <li>Победитель чемпионата России по CrossFit</li>
+                  <li>Опыт — 6 лет</li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="slider-trainer__item slider-item" tabindex="0">
+              <img src="img/coach-pashkov-desktop@1x.jpg" alt="фото Александр Пашков" width="260" height="294"
+                srcset="img/coach-pashkov-desktop@1x.jpg 1x, img/coach-pashkov-desktop@2x.jpg 2x">
+              <p>Александр Пашков</p>
+              <div class="slider-trainer__card">
+                <p>Александр Пашков</p>
+                <p>CrossFit</p>
+                <ul>
+                  <li>Certified Level 3 Trainer</li>
+                  <li>Победитель чемпионата России по CrossFit</li>
+                  <li>Опыт — 6 лет</li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="slider-trainer__item slider-item" tabindex="0">
+              <img src="img/coach-ketova-desktop@1x.jpg" alt="фото Мария Кетова" width="260" height="294"
+                srcset="img/coach-ketova-desktop@1x.jpg 1x, img/coach-ketova-desktop@2x.jpg 2x">
+              <p>Мария Кетова</p>
+              <div class="slider-trainer__card">
+                <p>Мария Кетова</p>
+                <p>CrossFit</p>
+                <ul>
+                  <li>Certified Level 3 Trainer</li>
+                  <li>Победитель чемпионата России по CrossFit</li>
+                  <li>Опыт — 6 лет</li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="slider-trainer__item slider-item" tabindex="0">
+              <img src="img/coach-pavlova-desktop@1x.jpg" alt="фото Анна Павлова" width="260" height="294"
+                srcset="img/coach-pavlova-desktop@1x.jpg 1x, img/coach-pavlova-desktop@2x.jpg 2x">
+              <p>Анна Павлова</p>
+              <div class="slider-trainer__card">
+                <p>Анна Павлова</p>
+                <p>CrossFit</p>
+                <ul>
+                  <li>Certified Level 3 Trainer</li>
+                  <li>Победитель чемпионата России по CrossFit</li>
+                  <li>Опыт — 6 лет</li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="slider-trainer__item slider-item" tabindex="0">
+              <img src="img/coach-pavlova-desktop@1x.jpg" alt="фото Анна Павлова" width="260" height="294"
+                srcset="img/coach-pavlova-desktop@1x.jpg 1x, img/coach-pavlova-desktop@2x.jpg 2x">
+              <p>Анна Павлова</p>
+              <div class="slider-trainer__card">
+                <p>Анна Павлова</p>
+                <p>CrossFit</p>
+                <ul>
+                  <li>Certified Level 3 Trainer</li>
+                  <li>Победитель чемпионата России по CrossFit</li>
+                  <li>Опыт — 6 лет</li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="slider-trainer__item slider-item" tabindex="0">
+              <img src="img/coach-pavlova-desktop@1x.jpg" alt="фото Анна Павлова" width="260" height="294"
+                srcset="img/coach-pavlova-desktop@1x.jpg 1x, img/coach-pavlova-desktop@2x.jpg 2x">
+              <p>Анна Павлова</p>
+              <div class="slider-trainer__card">
+                <p>Анна Павлова</p>
+                <p>CrossFit</p>
+                <ul>
+                  <li>Certified Level 3 Trainer</li>
+                  <li>Победитель чемпионата России по CrossFit</li>
+                  <li>Опыт — 6 лет</li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="slider-trainer__item slider-item" tabindex="0">
+              <img src="img/coach-pavlova-desktop@1x.jpg" alt="фото Анна Павлова" width="260" height="294"
+                srcset="img/coach-pavlova-desktop@1x.jpg 1x, img/coach-pavlova-desktop@2x.jpg 2x">
+              <p>Анна Павлова</p>
+              <div class="slider-trainer__card">
+                <p>Анна Павлова</p>
+                <p>CrossFit</p>
+                <ul>
+                  <li>Certified Level 3 Trainer</li>
+                  <li>Победитель чемпионата России по CrossFit</li>
+                  <li>Опыт — 6 лет</li>
+                </ul>
+              </div>
+            </li>
+
+          </ul>
+          <button class="button-slider button-slider--next slider-control-right slider-control" type="button"
+            aria-label="кнопка следующий слайд">
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Блок Преимущества -->
+
+    <section class="advantage">
+      <div class="advantage__inner">
+        <h2>Наши преимущества</h2>
+        <ul class="advantage__row">
+
+          <li class="advantage__card advantage__card--center">
+            <p>100</p>
+            <h3>Тренажеров</h3>
+            <p>Современные тренажеры на все группы мышц</p>
+          </li>
+
+          <li class="advantage__card">
+            <ul class="advantage__list">
+              <li class="advantage__item advantage__item--amount">
+                <svg role="img" width="108" height="49">
+                  <use xlink:href="#icon-900"></use>
+                </svg>
+              </li>
+              <li class="advantage__item advantage__item--feature">кв/м</li>
+            </ul>
+            <div class="advantage__text">
+              <h3>Площадь</h3>
+              <p>Занимайтесь без очередей и толкучки</p>
+            </div>
+          </li>
+
+          <li class="advantage__card">
+            <ul class="advantage__list">
+              <li class="advantage__item advantage__item--amount">
+                <svg role="img" width="72" height="49">
+                  <use xlink:href="#icon-70"></use>
+                </svg>
+              </li>
+              <li class="advantage__item advantage__item--feature">машин</li>
+            </ul>
+            <div class="advantage__text">
+              <h3>Собственная парковка</h3>
+              <p>Вы всегда найдете место для своей машины на нашей
+                парковке</p>
+            </div>
+          </li>
+
+          <li class="advantage__card">
+            <ul class="advantage__list">
+              <li class="advantage__item advantage__item--amount">
+                <svg role="img" width="108" height="49">
+                  <use xlink:href="#icon-350"></use>
+                </svg>
+              </li>
+              <li class="advantage__item advantage__item--feature">мест</li>
+            </ul>
+            <div class="advantage__text">
+              <h3>Комфорт</h3>
+              <p>Просторные раздевалки, душевые, фен, Wi-Fi, кулеры</p>
+            </div>
+          </li>
+
+          <li class="advantage__card">
+            <ul class="advantage__list">
+              <li class="advantage__item advantage__item--amount">
+                <svg role="img" width="72" height="49">
+                  <use xlink:href="#icon-5"></use>
+                </svg>
+              </li>
+              <li class="advantage__item advantage__item--feature">лет</li>
+            </ul>
+            <div class="advantage__text">
+              <h3>Тренерский опыт</h3>
+              <p>Добивайтесь своих целей быстрее с профессиональным тренером</p>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+    </section>
+
+    <!-- Блок Акции -->
+
+    <section class="offer">
+      <div class="offer__inner">
+        <h2>Акции</h2>
+        <ul class="offer__list-year">
+          <li class="offer__item-year offer__item-year--color">
+            <h3>Год</h3>
+            <p>4999</p>
+            <p>Безлимитный абонемент в тренажерный зал</p>
+            <a href="#" class="offer__link-year">подробнее</a>
+          </li>
+          <li class="offer__item-year offer__item-year--picture">
+            <img src="img/offer-desktop@1x.jpg" alt="фото спортсменки" width="280" height="462"
+              srcset="img/offer-desktop@1x.jpg 1x, img/offer-desktop@2x.jpg 2x">
+          </li>
+        </ul>
+        <ul class="offer__list-extra">
+          <li class="offer__item-extra">
+            <h3>Месяц бесплатно</h3>
+            <p>Приведи друга, получи абонемент в подарок</p>
+            <a href="#" class="offer__link">подробнее</a>
+          </li>
+          <li class="offer__item-extra">
+            <h3>Скидка 20%</h3>
+            <p>Корпоративный фитнес с командой</p>
+            <a href="#" class="offer__link">подробнее</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Блок Отзывы -->
+
+    <section class="recall">
+      <div class="recall__inner">
+        <h2>Отзывы</h2>
+        <div id="slider-recall" class="recall__content">
+          <button class="recall__button recall__button--prev slider-control-left slider-control" type="button"
+            aria-label="кнопка предыдущий слайд">
+          </button>
+          <ul class="recall__list slider-wrapper">
+            <li class="recall__item slider-item">
+              <h3>Анна Орлова</h3>
+              <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал
+                дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+            </li>
+            <li class="recall__item slider-item">
+              <h3>Анна Орлова</h3>
+              <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал
+                дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+            </li>
+            <li class="recall__item slider-item">
+              <h3>Анна Орлова</h3>
+              <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал
+                дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+            </li>
+          </ul>
+          <button class="recall__button recall__button--next slider-control-right slider-control" type="button"
+            aria-label="кнопка следующий слайд">
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Блок Контакты -->
+
+    <section class="contact">
+      <div class="contact__content">
+        <div class="contact__background-form">
+          <form action="#" class="form" method="GET">
+            <h2>Бесплатное занятие</h2>
+            <div class="form__group">
+              <input type="text" id="user-name" name="username" placeholder="Имя" required="required">
+              <label class="form__label visually-hidden" for="user-name">Поле для ввода Имени</label>
+              <input type="tel" id="user-phone" name="userphone"
+                pattern="\+[0-9]{1} \([0-9]{3}\) [0-9]{3} [0-9]{2} [0-9]{2}" maxlength="18" placeholder="Телефон"
+                required>
+              <label class="form__label visually-hidden" for="user-phone">Поле для ввода номера телефона в формате +7
+                (000)000 00
+                00</label>
+            </div>
+            <button class="form__button btn btn--send" type="submit">Отправить</button>
+          </form>
+        </div>
+
+        <div class="contact__background-column">
+          <div class="contact__column">
+            <h2>Контакты</h2>
+
+            <ul class="contact__list">
+
+              <li class="contact__item">
+                <span>Адрес:</span>
+                <address class="contact__address">г. Омск, ул. 60 лет Октября, 7</address>
+              </li>
+
+              <li class="contact__item">
+                <span>Телефон:</span>
+                <a class="contact__link-phone" href="tel:8-800-555-55-55">8-800-555-55-55</a>
+              </li>
+
+              <li class="contact__item">
+                <span>График работы:</span>
+                <p>Пн-Вс: с 8:00 до 22:00</p>
+              </li>
+
+              <li class="contact__item">
+                <span>Email:</span>
+                <a class="contact__link-email" href="mailto:omsk@supergym.ru">omsk@supergym.ru</a>
+              </li>
+
+            </ul>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Футер -->
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__row">
+        <a href="#" class="footer__logo-link" aria-label="Логотип фитнесс-центра Supergym">
+          Supergym
+        </a>
+        <nav class="footer__navigation"><a href="#" class="footer__navigation-link">Услуги</a>
+          <a href="#" class="footer__navigation-link">Абонементы</a>
+          <a href="#" class="footer__navigation-link">Акции</a>
+          <a href="#" class="footer__navigation-link">Тренеры</a>
+          <a href="#" class="footer__navigation-link">Расписание</a></nav>
+
+        <ul class="footer__list-social">
+          <li class="footer__item-social">
+            <a class="footer__social-link" href="#" aria-label="Supergym во Вконтакте">
+              <svg role="img" width="24" height="13">
+                <use xlink:href="#icon-vk"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__item-social">
+            <a class="footer__social-link" href="#" aria-label="Supergym в Инстаграмме">
+              <svg role="img" width="24" height="24">
+                <use xlink:href="#icon-insta"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__item-social">
+            <a class="footer__social-link" href="#" aria-label="Supergym в Фейсбуке">
+              <svg role="img" width="12" height="24">
+                <use xlink:href="#icon-fb"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/vendor.js"></script>
+
 </body>
+
 </html>
