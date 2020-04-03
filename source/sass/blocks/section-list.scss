@@ -1,0 +1,31 @@
+.section-list {
+  @include list-reset;
+  width: 431px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  @include font(14px, 16px);
+}
+
+@media (max-width: $tablet-width) {
+  .section-list {
+    width: 391px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .section-list {
+    width: 100%;
+    height: 123px;
+    flex-direction: column;
+    @include font(16px, 19px);
+  }
+
+  .section-list__item:first-child {
+    margin-top: 40px;
+  }
+
+  .section-list__item {
+    margin-bottom: 22px;
+  }
+}

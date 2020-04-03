@@ -1,0 +1,38 @@
+.contact-list {
+  @include list-reset;
+  padding-left: 4px;
+}
+
+.contact-list__title {
+  margin-bottom: 4px;
+  @include font (16px, 24px);
+  font-weight: 700;
+}
+
+.contact-list__data {
+  margin-top: 4px;
+  @include font (14px, 21px);
+  color: $color-text;
+}
+
+@media (max-width: $tablet-width) {
+  .contact-list {
+    padding-left: 0;
+  }
+
+  .contact-list__title {
+    margin-bottom: 5px;
+    @include font (20px, 30px);
+  }
+
+  .contact-list__data {
+    margin-top: 5px;
+    @include font (18px, 27px);
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .contact-list__data {
+    margin-bottom: 0;
+  }
+}

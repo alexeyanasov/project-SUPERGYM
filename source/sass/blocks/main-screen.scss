@@ -1,0 +1,152 @@
+.main-screen {
+  margin-top: -63px;
+  padding-top: 56px;
+  padding-bottom: 46px;
+  background-color: $color-blue;
+  background-image: url("../img/background-desktop.png");
+  background-position: 0 0;
+  background-size: cover;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/background-desktop@2x.png");
+  }
+}
+
+.main-screen__wrapper {
+  width: 97%;
+  max-width: 1160px;
+  min-height: 556px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-screen__container {
+  width: 396px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.main-screen__title {
+  position: relative;
+}
+
+.main-screen h1 {
+  width: 396px;
+  margin: 0;
+  margin-top: 14px;
+  font-family: $font-title;
+  @include font (109px, 109px);
+  text-align: right;
+  color: $color-white;
+  letter-spacing: 0.03em;
+}
+
+.main-screen p {
+  margin: 0;
+  font-family: $font-title;
+  @include font (49px, 49px);
+  text-align: right;
+  color: $color-white;
+  letter-spacing: 0.03em;
+  order: -1;
+}
+
+.main-screen__list {
+  position: absolute;
+  left: 20px;
+  bottom: 29px;
+}
+
+.main-screen__img {
+  margin-right: auto;
+  margin-left: 64px;
+}
+
+.main-screen__button {
+  margin-top: 55px;
+  margin-bottom: 48px;
+}
+
+@media (max-width: $tablet-width) {
+  .main-screen {
+    padding-top: 82px;
+    padding-bottom: 0;
+  }
+
+  .main-screen__wrapper {
+    width: 91%;
+    min-height: 474px;
+  }
+
+  .main-screen__container {
+    width: 328px;
+  }
+
+  .main-screen h1 {
+    width: 100%;
+    margin-top: 5px;
+    @include font (86px, 86px);
+  }
+
+  .main-screen p {
+    @include font (34px, 34px);
+  }
+
+  .main-screen__list {
+    left: 3px;
+    bottom: 15px;
+  }
+
+  .main-screen__img {
+    width: 324px;
+    height: 390px;
+    margin-left: 30px;
+  }
+
+  .main-screen__button {
+    margin-top: 42px;
+    margin-bottom: 106px;
+  }
+
+  .main-screen__social {
+    display: none;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .main-screen__wrapper {
+    width: 91%;
+    min-width: 290px;
+    min-height: 416px;
+  }
+
+  .main-screen__container {
+    margin: 0 auto;
+  }
+
+  .main-screen h1 {
+    margin-top: 14px;
+    @include font (78px, 78px);
+  }
+
+  .main-screen p {
+    @include font (28px, 28px);
+  }
+
+  .main-screen__list {
+    left: 0;
+    bottom: 14px;
+  }
+
+  .main-screen__img {
+    display: none;
+  }
+
+  .main-screen__button {
+    margin-top: 40px;
+    margin-bottom: 80px;
+  }
+}

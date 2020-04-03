@@ -1,0 +1,12 @@
+.offer-list {
+  @include list-reset;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+
+.offer-list__item {
+  @include font(14px, 21px);
+}

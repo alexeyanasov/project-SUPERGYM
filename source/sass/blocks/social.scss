@@ -1,0 +1,13 @@
+.social {
+  @include list-reset;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  margin-bottom: 45px;
+}
+
+.social__item {
+  margin-top: 16px;
+}

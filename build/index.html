@@ -1,588 +1,530 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Fitness center</title>
-  <meta name="description" content="Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья.">
-  <link rel="preload" href="fonts/robotocondensedbold.woff2" as="font" type="font/woff2">
-  <link rel="preload" href="fonts/robotocondensedregular.woff2" as="font" type="font/woff2">
-  <link rel="preload" href="fonts/robotocondensedlight.woff2" as="font" type="font/woff2">
-  <link rel="preload" href="fonts/bebasneuebold.woff2" as="font" type="font/woff2">
-  <link rel="preload" href="fonts/bebasneueregular.woff2" as="font" type="font/woff2">
-  <link rel="preload" href="fonts/robotocondensedbold.woff" as="font" type="font/woff">
-  <link rel="preload" href="fonts/robotocondensedregular.woff" as="font" type="font/woff">
-  <link rel="preload" href="fonts/robotocondensedlight.woff" as="font" type="font/woff">
-  <link rel="preload" href="fonts/bebasneuebold.woff" as="font" type="font/woff">
-  <link rel="preload" href="fonts/bebasneueregular.woff" as="font" type="font/woff">
+  <link rel="preload" href="fonts/bebasneue.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/bebasneuebold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Robotocondensedlight.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Robotocondensed.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Robotocondensedbold.woff2" as="font" crossorigin="anonymous">
+  <title>Фитнес-центр</title>
+  <link rel="stylesheet" type="text/css" href="js/slick/slick.css">
+  <link rel="stylesheet" type="text/css" href="js/slick/slick-theme.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
-
 <body>
-  <div class="sprite visually-hidden">
-    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs>
-<linearGradient id="paint1_linear" x1="-2" y1="3" x2="29.023" y2="62.4222" gradientUnits="userSpaceOnUse">
-<stop offset="0%" stop-color="#D10A42"></stop>
-<stop offset="100%" stop-color="#0041CA"></stop>
-</linearGradient>
-
-<linearGradient id="paint0_linear" x1="-3" y1="3" x2="19.4438" y2="41.104" gradientUnits="userSpaceOnUse">
-<stop offset="0%" stop-color="#D10A42"></stop>
-<stop offset="100%" stop-color="#0041CA"></stop>
-</linearGradient>
-<linearGradient id="paint0_linear" x1="19.774" y1="0" x2="105.785" y2="10.644" gradientUnits="userSpaceOnUse"><stop stop-color="#ED0233"></stop><stop offset="1" stop-color="#003EB7"></stop></linearGradient><linearGradient id="paint1_linear" x1="14" y1="49.52" x2="54.186" y2="9.184" gradientUnits="userSpaceOnUse"><stop stop-color="#003D85"></stop><stop offset=".885" stop-color="#B80027"></stop></linearGradient></defs><symbol id="icon-350" viewBox="0 0 103 53">
-<path d="M10.0298 22.2896H14.7793C16.582 22.2896 17.8994 21.6655 18.7314 20.4175C19.5866 19.1463 20.0142 17.4591 20.0142 15.356C20.0142 13.3452 19.575 11.7852 18.6968 10.6758C17.8416 9.54329 16.686 8.97705 15.23 8.97705C13.8664 8.97705 12.7454 9.50863 11.8672 10.5718C11.012 11.6349 10.5845 12.9754 10.5845 14.5933H0.773438C0.773438 11.9585 1.37435 9.60107 2.57617 7.521C3.80111 5.41781 5.49984 3.77686 7.67236 2.59814C9.868 1.41943 12.2948 0.830078 14.9526 0.830078C19.5981 0.830078 23.2383 2.11279 25.873 4.67822C28.5078 7.24365 29.8252 10.7567 29.8252 15.2173C29.8252 17.5054 29.2243 19.6317 28.0225 21.5962C26.8438 23.5376 25.2837 25.0283 23.3423 26.0684C25.7228 27.0853 27.4909 28.6107 28.6465 30.6445C29.8252 32.6784 30.4146 35.082 30.4146 37.8555C30.4146 42.3392 28.9816 45.9331 26.1157 48.6372C23.2729 51.3413 19.5288 52.6934 14.8833 52.6934C10.5614 52.6934 7.04834 51.3644 4.34424 48.7065C1.66325 46.0256 0.322754 42.5125 0.322754 38.1675H10.1338C10.1338 39.9702 10.6076 41.484 11.5552 42.709C12.5028 43.9339 13.7046 44.5464 15.1606 44.5464C16.8478 44.5464 18.1768 43.9224 19.1475 42.6743C20.1413 41.4263 20.6382 39.7622 20.6382 37.6821C20.6382 32.7131 18.7083 30.217 14.8486 30.1938H10.0298V22.2896ZM38.2148 27.1777L40.7109 1.52344H65.1519V9.91309H48.7539L47.8525 20.7295C49.7477 19.4583 51.7007 18.8228 53.7114 18.8228C57.8716 18.8228 61.0726 20.3019 63.3145 23.2603C65.5794 26.2186 66.7119 30.4019 66.7119 35.8101C66.7119 40.8716 65.3714 44.9508 62.6904 48.0479C60.0094 51.1449 56.4271 52.6934 51.9434 52.6934C49.2855 52.6934 46.8241 52.0693 44.5591 50.8213C42.2941 49.5501 40.5029 47.7936 39.1855 45.5518C37.8913 43.3099 37.2326 40.7676 37.2095 37.9248H46.9165C47.0783 40.028 47.5983 41.6574 48.4766 42.813C49.3548 43.9686 50.4873 44.5464 51.874 44.5464C53.4919 44.5464 54.7399 43.7721 55.6182 42.2236C56.4964 40.652 56.9355 38.3177 56.9355 35.2207C56.9355 32.3086 56.404 30.113 55.3408 28.6338C54.3008 27.1546 52.8332 26.415 50.938 26.415C49.089 26.415 47.6561 27.0506 46.6392 28.3218L46.0151 29.1885L38.2148 27.1777ZM102.455 31.1299C102.455 38.1097 101.183 43.4486 98.6411 47.1465C96.1219 50.8444 92.5164 52.6934 87.8247 52.6934C83.1792 52.6934 79.5853 50.9022 77.043 47.3198C74.5238 43.7144 73.2179 38.5604 73.1255 31.8579V22.3242C73.1255 15.3675 74.3851 10.0518 76.9043 6.37695C79.4235 2.67904 83.0405 0.830078 87.7554 0.830078C92.4702 0.830078 96.0872 2.65592 98.6064 6.30762C101.126 9.95931 102.408 15.1711 102.455 21.9429V31.1299ZM92.6089 20.9028C92.6089 16.9276 92.216 13.9461 91.4302 11.9585C90.6444 9.97087 89.4194 8.97705 87.7554 8.97705C84.6353 8.97705 83.0174 12.6172 82.9019 19.8975V32.4819C82.9019 36.5496 83.2948 39.5773 84.0806 41.5649C84.8895 43.5526 86.1375 44.5464 87.8247 44.5464C89.4194 44.5464 90.5981 43.6219 91.3608 41.7729C92.1466 39.9009 92.5627 37.0465 92.6089 33.21V20.9028Z" fill="url(#paint0_linear)"></path>
-</symbol><symbol id="icon-5" viewBox="0 0 65 52">
-<path d="M1.29883 26.1777L3.79492 0.523438H28.2358V8.91309H11.8379L10.9365 19.7295C12.8317 18.4583 14.7847 17.8228 16.7954 17.8228C20.9556 17.8228 24.1566 19.3019 26.3984 22.2603C28.6634 25.2186 29.7959 29.4019 29.7959 34.8101C29.7959 39.8716 28.4554 43.9508 25.7744 47.0479C23.0934 50.1449 19.5111 51.6934 15.0273 51.6934C12.3695 51.6934 9.90804 51.0693 7.64307 49.8213C5.37809 48.5501 3.58691 46.7936 2.26953 44.5518C0.97526 42.3099 0.316569 39.7676 0.293457 36.9248H10.0005C10.1623 39.028 10.6823 40.6574 11.5605 41.813C12.4388 42.9686 13.5713 43.5464 14.958 43.5464C16.5758 43.5464 17.8239 42.7721 18.7021 41.2236C19.5804 39.652 20.0195 37.3177 20.0195 34.2207C20.0195 31.3086 19.488 29.113 18.4248 27.6338C17.3848 26.1546 15.9172 25.415 14.022 25.415C12.173 25.415 10.7401 26.0506 9.72314 27.3218L9.09912 28.1885L1.29883 26.1777ZM54.4102 22.7109H64.2212V31.8286H54.4102V45.9385H45.1191V31.8286H35.1348V22.7109H45.1191V9.19043H54.4102V22.7109Z" fill="url(#paint1_linear)"></path>
-</symbol><symbol id="icon-70" viewBox="0 0 67 53">
-<path d="M30.8999 7.17432L14.9526 52H4.58691L20.6035 9.67041H0.357422V1.52344H30.8999V7.17432ZM66.5386 31.1299C66.5386 38.1097 65.2674 43.4486 62.7251 47.1465C60.2059 50.8444 56.6004 52.6934 51.9087 52.6934C47.2632 52.6934 43.6693 50.9022 41.127 47.3198C38.6077 43.7144 37.3019 38.5604 37.2095 31.8579V22.3242C37.2095 15.3675 38.4691 10.0518 40.9883 6.37695C43.5075 2.67904 47.1245 0.830078 51.8394 0.830078C56.5542 0.830078 60.1712 2.65592 62.6904 6.30762C65.2096 9.95931 66.4924 15.1711 66.5386 21.9429V31.1299ZM56.6929 20.9028C56.6929 16.9276 56.3 13.9461 55.5142 11.9585C54.7284 9.97087 53.5034 8.97705 51.8394 8.97705C48.7192 8.97705 47.1014 12.6172 46.9858 19.8975V32.4819C46.9858 36.5496 47.3787 39.5773 48.1646 41.5649C48.9735 43.5526 50.2215 44.5464 51.9087 44.5464C53.5034 44.5464 54.6821 43.6219 55.4448 41.7729C56.2306 39.9009 56.6466 37.0465 56.6929 33.21V20.9028Z" fill="url(#paint1_linear)"></path>
-
-</symbol><symbol id="icon-900" viewBox="0 0 102 53">
-<path d="M19.3262 32.4819C17.2461 34.6082 14.9696 35.6714 12.4966 35.6714C8.65999 35.6714 5.63232 34.1344 3.41357 31.0605C1.21794 27.9635 0.120117 23.8381 0.120117 18.6841C0.120117 15.356 0.744141 12.3167 1.99219 9.56641C3.24023 6.79297 4.97363 4.64355 7.19238 3.11816C9.43424 1.59277 11.9303 0.830078 14.6807 0.830078C17.5234 0.830078 20.0542 1.67367 22.2729 3.36084C24.4917 5.04801 26.2135 7.47477 27.4385 10.6411C28.6634 13.7843 29.2759 17.3667 29.2759 21.3882V24.959C29.2759 33.5566 27.3807 40.2822 23.5903 45.1357C19.8231 49.9661 14.4727 52.4276 7.53906 52.52H6.53369V44.061H7.19238C11.029 44.0379 13.9064 43.0441 15.8247 41.0796C17.7661 39.1151 18.9333 36.2492 19.3262 32.4819ZM14.9927 27.9751C16.8879 27.9751 18.3786 26.6808 19.4648 24.0923V19.5854C19.4648 16.2804 19.0142 13.6919 18.1128 11.8198C17.2114 9.92464 16.0443 8.97705 14.6113 8.97705C13.2015 8.97705 12.0575 9.91309 11.1792 11.7852C10.3241 13.6341 9.89648 15.8991 9.89648 18.5801C9.89648 21.4922 10.3472 23.7918 11.2485 25.479C12.1499 27.1431 13.3979 27.9751 14.9927 27.9751ZM65.5386 31.1299C65.5386 38.1097 64.2674 43.4486 61.7251 47.1465C59.2059 50.8444 55.6004 52.6934 50.9087 52.6934C46.2632 52.6934 42.6693 50.9022 40.127 47.3198C37.6077 43.7144 36.3019 38.5604 36.2095 31.8579V22.3242C36.2095 15.3675 37.4691 10.0518 39.9883 6.37695C42.5075 2.67904 46.1245 0.830078 50.8394 0.830078C55.5542 0.830078 59.1712 2.65592 61.6904 6.30762C64.2096 9.95931 65.4924 15.1711 65.5386 21.9429V31.1299ZM55.6929 20.9028C55.6929 16.9276 55.3 13.9461 54.5142 11.9585C53.7284 9.97087 52.5034 8.97705 50.8394 8.97705C47.7192 8.97705 46.1014 12.6172 45.9858 19.8975V32.4819C45.9858 36.5496 46.3787 39.5773 47.1646 41.5649C47.9735 43.5526 49.2215 44.5464 50.9087 44.5464C52.5034 44.5464 53.6821 43.6219 54.4448 41.7729C55.2306 39.9009 55.6466 37.0465 55.6929 33.21V20.9028ZM101.455 31.1299C101.455 38.1097 100.183 43.4486 97.6411 47.1465C95.1219 50.8444 91.5164 52.6934 86.8247 52.6934C82.1792 52.6934 78.5853 50.9022 76.043 47.3198C73.5238 43.7144 72.2179 38.5604 72.1255 31.8579V22.3242C72.1255 15.3675 73.3851 10.0518 75.9043 6.37695C78.4235 2.67904 82.0405 0.830078 86.7554 0.830078C91.4702 0.830078 95.0872 2.65592 97.6064 6.30762C100.126 9.95931 101.408 15.1711 101.455 21.9429V31.1299ZM91.6089 20.9028C91.6089 16.9276 91.216 13.9461 90.4302 11.9585C89.6444 9.97087 88.4194 8.97705 86.7554 8.97705C83.6353 8.97705 82.0174 12.6172 81.9019 19.8975V32.4819C81.9019 36.5496 82.2948 39.5773 83.0806 41.5649C83.8895 43.5526 85.1375 44.5464 86.8247 44.5464C88.4194 44.5464 89.5981 43.6219 90.3608 41.7729C91.1466 39.9009 91.5627 37.0465 91.6089 33.21V20.9028Z" fill="url(#paint0_linear)"></path>
-
-</symbol><symbol id="icon-arrow-next" viewBox="0 0 18 34">
-<path d="M1 1L17 17L1 33" stroke="#AFAFAF"></path>
-</symbol><symbol id="icon-arrow-prev" viewBox="0 0 18 34">
-<path d="M17 1L0.999999 17L17 33" stroke="#AFAFAF"></path>
-</symbol><symbol id="icon-fb-mobile" viewBox="0 0 14 27">
-<path d="M13.4728 0.0056178L10.1148 0C6.34228 0 3.90429 2.60806 3.90429 6.64474V9.7084H0.528007C0.236257 9.7084 0 9.95503 0 10.2592V14.6981C0 15.0023 0.236526 15.2487 0.528007 15.2487H3.90429V26.4495C3.90429 26.7537 4.14055 27 4.4323 27H8.83738C9.12914 27 9.36539 26.7534 9.36539 26.4495V15.2487H13.3131C13.6048 15.2487 13.8411 15.0023 13.8411 14.6981L13.8427 10.2592C13.8427 10.1132 13.7869 9.97328 13.688 9.86992C13.5892 9.76655 13.4545 9.7084 13.3144 9.7084H9.36539V7.11129C9.36539 5.86302 9.65068 5.22933 11.2102 5.22933L13.4723 5.22849C13.7637 5.22849 14 4.98187 14 4.67794V0.556162C14 0.25252 13.764 0.00617958 13.4728 0.0056178Z" fill="white"></path>
-</symbol><symbol id="icon-fb" viewBox="0 0 12 24">
-<path d="M11.5481 0.0049936L8.66986 0C5.43624 0 3.34653 2.31828 3.34653 5.90643V8.62969H0.452578C0.202506 8.62969 0 8.84891 0 9.11932V13.065C0 13.3354 0.202736 13.5544 0.452578 13.5544H3.34653V23.5106C3.34653 23.781 3.54904 24 3.79911 24H7.5749C7.82497 24 8.02748 23.7808 8.02748 23.5106V13.5544H11.4112C11.6613 13.5544 11.8638 13.3354 11.8638 13.065L11.8652 9.11932C11.8652 8.98948 11.8174 8.86514 11.7326 8.77326C11.6479 8.68138 11.5324 8.62969 11.4123 8.62969H8.02748V6.32115C8.02748 5.21157 8.27201 4.64829 9.60873 4.64829L11.5477 4.64755C11.7975 4.64755 12 4.42833 12 4.15817V0.494367C12 0.224462 11.7977 0.00549296 11.5481 0.0049936Z" fill="white"></path>
-</symbol><symbol id="icon-insta-mobile" viewBox="0 0 27 27">
-<path d="M19.6913 0H7.30865C3.27859 0 0 3.27859 0 7.30865V19.6916C0 23.7214 3.27859 27 7.30865 27H19.6916C23.7214 27 27 23.7214 27 19.6916V7.30865C27 3.27859 23.7214 0 19.6913 0V0ZM13.5 20.8826C9.42915 20.8826 6.11739 17.5708 6.11739 13.5C6.11739 9.42915 9.42915 6.11739 13.5 6.11739C17.5708 6.11739 20.8826 9.42915 20.8826 13.5C20.8826 17.5708 17.5708 20.8826 13.5 20.8826ZM21.0591 7.85845C19.8561 7.85845 18.8777 6.87998 18.8777 5.67698C18.8777 4.47398 19.8561 3.4953 21.0591 3.4953C22.2621 3.4953 23.2408 4.47398 23.2408 5.67698C23.2408 6.87998 22.2621 7.85845 21.0591 7.85845Z" fill="white"></path>
-<path d="M13.5002 7.70044C10.3023 7.70044 7.70044 10.3021 7.70044 13.5002C7.70044 16.698 10.3023 19.2999 13.5002 19.2999C16.6982 19.2999 19.2999 16.698 19.2999 13.5002C19.2999 10.3021 16.6982 7.70044 13.5002 7.70044Z" fill="white"></path>
-<path d="M21.0583 5.07861C20.7283 5.07861 20.4597 5.34723 20.4597 5.67723C20.4597 6.00723 20.7283 6.27585 21.0583 6.27585C21.3885 6.27585 21.6572 6.00744 21.6572 5.67723C21.6572 5.34702 21.3885 5.07861 21.0583 5.07861Z" fill="white"></path>
-</symbol><symbol id="icon-insta" viewBox="0 0 24 24">
-<path d="M17.5034 0H6.49658C2.91431 0 0 2.91431 0 6.49658V17.5036C0 21.0857 2.91431 24 6.49658 24H17.5036C21.0857 24 24 21.0857 24 17.5036V6.49658C24 2.91431 21.0857 0 17.5034 0V0ZM12 18.5623C8.38147 18.5623 5.43768 15.6185 5.43768 12C5.43768 8.38147 8.38147 5.43768 12 5.43768C15.6185 5.43768 18.5623 8.38147 18.5623 12C18.5623 15.6185 15.6185 18.5623 12 18.5623ZM18.7192 6.98529C17.6499 6.98529 16.7802 6.11554 16.7802 5.0462C16.7802 3.97687 17.6499 3.10693 18.7192 3.10693C19.7886 3.10693 20.6585 3.97687 20.6585 5.0462C20.6585 6.11554 19.7886 6.98529 18.7192 6.98529Z" fill="white"></path>
-<path d="M12.0001 6.84448C9.15753 6.84448 6.84473 9.1571 6.84473 11.9998C6.84473 14.8423 9.15753 17.1552 12.0001 17.1552C14.8428 17.1552 17.1554 14.8423 17.1554 11.9998C17.1554 9.1571 14.8428 6.84448 12.0001 6.84448Z" fill="white"></path>
-<path d="M18.7186 4.51392C18.4253 4.51392 18.1865 4.75269 18.1865 5.04602C18.1865 5.33936 18.4253 5.57812 18.7186 5.57812C19.0121 5.57812 19.2509 5.33954 19.2509 5.04602C19.2509 4.7525 19.0121 4.51392 18.7186 4.51392Z" fill="white"></path>
-</symbol><symbol id="icon-play"><circle cx="50" cy="50" r="49" stroke="url(#paint0_linear)" stroke-opacity=".2" stroke-width="2"></circle><circle cx="50" cy="50" r="36" fill="url(#paint1_linear)"></circle><path d="M59 49.5l-12.75 7.361V42.14L59 49.5z" fill="#fff"></path></symbol><symbol id="icon-prev-crimson"><path d="M17 1L1 17l16 16" stroke="#ED0233"></path></symbol><symbol id="icon-prev"><path d="M17 1L1 17l16 16" stroke="#AFAFAF"></path></symbol><symbol id="icon-rouble"><path fill-rule="evenodd" clip-rule="evenodd" d="M18.5 6H10v11h8.5a5.5 5.5 0 100-11zM4 0v23h14.5C24.851 23 30 17.851 30 11.5S24.851 0 18.5 0H4z" fill="#102654"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M0 17h6v6H0v-6z" fill="#102654"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M3.659 28.321V18h6v10.321H21v6H9.659V42h-6v-7.679H0v-6h3.659z" fill="#102654"></path></symbol><symbol id="icon-vk-mobile" viewBox="0 0 32 17">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M27.5406 10.8094C28.602 11.7823 29.7224 12.6976 30.6744 13.7686C31.095 14.2445 31.4931 14.7356 31.7977 15.288C32.2293 16.0731 31.8384 16.9371 31.0885 16.984L26.4266 16.982C25.2243 17.0757 24.2651 16.6213 23.4586 15.8496C22.8131 15.2324 22.2154 14.5756 21.5948 13.9376C21.3403 13.6768 21.074 13.4314 20.7559 13.2375C20.1195 12.8497 19.5671 12.9684 19.2034 13.5915C18.833 14.2253 18.749 14.927 18.7126 15.6333C18.6627 16.6638 18.3308 16.9348 17.2281 16.9819C14.8716 17.0863 12.6351 16.7516 10.5574 15.6356C8.72568 14.6517 7.30526 13.2628 6.06893 11.6905C3.66178 8.62871 1.81839 5.26434 0.161611 1.80571C-0.211316 1.02647 0.0614137 0.608187 0.977277 0.593382C2.49811 0.565647 4.01873 0.567621 5.54135 0.591408C6.15946 0.599896 6.56866 0.93271 6.80732 1.48089C7.63014 3.38016 8.63694 5.18715 9.90071 6.86208C10.2373 7.30801 10.5804 7.75393 11.0691 8.0678C11.6097 8.41532 12.0214 8.30014 12.2757 7.73479C12.4371 7.37631 12.5077 6.9902 12.5441 6.60625C12.6646 5.28536 12.6805 3.96673 12.4691 2.65048C12.3394 1.829 11.8465 1.29721 10.9733 1.14176C10.5278 1.0625 10.5941 0.906852 10.8098 0.668097C11.1846 0.256323 11.537 0 12.2395 0H17.5081C18.3376 0.153675 18.5218 0.503466 18.6353 1.28694L18.6398 6.78085C18.6308 7.08416 18.8012 7.9842 19.3832 8.18495C19.8489 8.32787 20.1559 7.97808 20.4354 7.70083C21.6968 6.44399 22.5972 4.95866 23.4015 3.42063C23.7584 2.74434 24.0653 2.04199 24.3627 1.34024C24.5831 0.819502 24.9289 0.563278 25.5538 0.574628L30.6245 0.578872C30.7748 0.578872 30.927 0.580945 31.0726 0.604337C31.9271 0.741036 32.1612 1.08609 31.8973 1.86937C31.4815 3.09828 30.6724 4.12238 29.8814 5.15123C29.0357 6.24965 28.1313 7.31048 27.2928 8.41542C26.5223 9.42442 26.5835 9.93302 27.5406 10.8094Z" fill="white"></path>
-</symbol><symbol id="icon-vk" viewBox="0 0 24 13">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M20.6554 8.26599C21.4515 9.00996 22.2918 9.70992 23.0058 10.5289C23.3212 10.8929 23.6199 11.2684 23.8483 11.6908C24.172 12.2912 23.8788 12.9519 23.3163 12.9878L19.82 12.9863C18.9182 13.0579 18.1988 12.7104 17.5939 12.1203C17.1098 11.6483 16.6615 11.146 16.1961 10.6581C16.0052 10.4587 15.8055 10.2711 15.5669 10.1228C15.0896 9.82623 14.6753 9.91703 14.4025 10.3935C14.1247 10.8781 14.0617 11.4148 14.0344 11.9549C13.997 12.7429 13.7481 12.9501 12.9211 12.9862C11.1537 13.066 9.47629 12.81 7.91806 11.9566C6.54426 11.2043 5.47894 10.1422 4.5517 8.93977C2.74634 6.59842 1.36379 4.02567 0.121208 1.38084C-0.158487 0.784951 0.0460603 0.465084 0.732957 0.453762C1.87358 0.432554 3.01405 0.434063 4.15601 0.452253C4.61959 0.458744 4.92649 0.713249 5.10549 1.13244C5.7226 2.58483 6.47771 3.96665 7.42553 5.24748C7.67794 5.58848 7.93532 5.92948 8.30184 6.16949C8.7073 6.43524 9.01602 6.34716 9.20677 5.91484C9.32781 5.64071 9.3808 5.34544 9.40808 5.05184C9.49845 4.04175 9.51035 3.03338 9.35186 2.02684C9.25455 1.39865 8.88488 0.991982 8.23 0.873108C7.89582 0.8125 7.94558 0.693475 8.10738 0.510898C8.38842 0.196012 8.65274 0 9.17964 0H13.1311C13.7532 0.117516 13.8913 0.385004 13.9765 0.984133L13.9799 5.18536C13.9731 5.4173 14.1009 6.10556 14.5374 6.25908C14.8867 6.36837 15.117 6.10088 15.3265 5.88887C16.2726 4.92776 16.9479 3.79192 17.5511 2.61578C17.8188 2.09861 18.049 1.56153 18.2721 1.02489C18.4373 0.626678 18.6967 0.430742 19.1653 0.439422L22.9684 0.442667C23.0811 0.442667 23.1952 0.444252 23.3044 0.46214C23.9453 0.566675 24.1209 0.830539 23.923 1.42952C23.6111 2.36927 23.0043 3.15241 22.411 3.93917C21.7768 4.77915 21.0985 5.59036 20.4696 6.43532C19.8917 7.20691 19.9376 7.59584 20.6554 8.26599Z" fill="white"></path>
-</symbol></svg>
-  </div>
-
-  <!-- Хедер -->
-
-  <div class="wrapper-header-prime">
-    <header class="header">
-      <div class="header__inner">
-        <div class="header__row">
-          <a href="#" class="header__logo-link" aria-label="Логотип фитнесс-центра Supergym">
-            Supergym
-          </a>
-          <nav class="header__navigation">
-            <a class="header__navigation-link" href="tel:8-800-555-55-55">8-800-555-55-55</a>
-          </nav>
-        </div>
-      </div>
-    </header>
-
-    <!-- Блок Prime -->
-
-    <section class="prime">
-      <div class="prime__inner">
-        <span>омск</span>
-        <div class="prime__row prime__row--middle">
-          <ul class="prime__list">
-            <li class="prime__item">Тренажёрный зал</li>
-            <li class="prime__item">Групповые занятия</li>
-            <li class="prime__item">Кардио-зона</li>
-          </ul>
-          <h1>Фитнес центр</h1>
-        </div>
-        <div class="prime__row prime__row--buttom">
-          <button class="btn btn--buy" type="button">Купить
-            абонемент</button>
-          <ul class="prime__list-social">
-            <li class="prime__item-social">
-              <a href="#" class="prime__link-social" aria-label="Фитнесс-центр Орёл в Фейсбуке">
-                fb
-              </a>
-            </li>
-            <li class="prime__item-social">
-              <a href="#" class="prime__link-social" aria-label="Фитнесс-центр Орёл во Вконтакте">
-                vk
-              </a>
-            </li>
-            <li class="prime__item-social">
-              <a href="#" class="prime__link-social" aria-label="Фитнесс-центр Орёл в Инстаграмме">
-                ig
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-  </div>
-
+  <header>
+    <nav class="main-nav">
+      <a class="main-nav__logo">SuperGym
+        <!--<img src="img/logo.svg" width="89" height="20" alt="SuperGym">-->
+      </a>
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item">
+          <a href="tel:88005555555">8-800-555-55-55</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
   <main>
-
-    <!-- Блок Тренажёрный зал -->
-
-    <section class="gym">
-      <div class="gym__inner">
-        <div class="gym__content">
-          <h2>Тренажерный зал</h2>
-          <p>Просторный зал площадью 900 кв/м</p>
-          <p>Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья.
-            Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.</p>
-          <p>В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также в фитнес центре есть
-            несколько оборудованных залов для различных видов групповых занятий.</p>
-        </div>
-        <div class="gym__image">
-          <img src="img/gym-desktop@1x.jpg" alt="фото тренажёрного зала" width="660" height="401" srcset="img/gym-desktop@1x.jpg 1x, img/gym-desktop@2x.jpg 2x">
-        </div>
-        <div class="gym__video-wrapper">
-          <video class="gym__video" poster="img/video-gym-desktop@1x.png"></video>
-          <button class="gym__play" aria-label="воспроизвести видео" type="button">
-          </button>
-        </div>
-      </div>
-    </section>
-
-    <!-- Блок Абонементы -->
-
-    <section class="subscription">
-      <div class="subscription__inner">
-        <div class="subscription__row">
-          <h2>Абонементы</h2>
-          <ul class="subscription__list">
-            <li class="subscription__item">
-              <button class="subscription__button subscription__button--active" type="button" aria-label="1 месяц">
-                1 месяц
-              </button>
-            </li>
-            <li class="subscription__item">
-              <button class="subscription__button" type="button" aria-label="6 месяцев">
-                6 месяцев
-              </button>
-            </li>
-            <li class="subscription__item">
-              <button class="subscription__button" type="button" aria-label="12 месяцев">
-                12 месяцев
-              </button>
-            </li>
-          </ul>
-        </div>
-        <div class="subscription__content">
-          <section class="subscription__card" tabindex="0">
-            <h3>С тренером</h3>
-            <P>12 занятий</P>
-            <P>5000</P>
-            <a href="#" class="subscription__card-link btn btn--subscription" aria-label="кнопка купить абонемент">купить абонемент</a>
-          </section>
-          <section class="subscription__card" tabindex="0">
-            <h3>Дневной</h3>
-            <P>с 8:00 до 17:00 </P>
-            <P>1700</P>
-            <a href="#" class="subscription__card-link btn btn--subscription" aria-label="кнопка купить абонемент">купить абонемент</a>
-          </section>
-          <section class="subscription__card" tabindex="0">
-            <h3>Полный день</h3>
-            <P>с 8:00 до 22:00 </P>
-            <P>2700</P>
-            <a href="#" class="subscription__card-link btn btn--subscription" aria-label="кнопка купить абонемент">купить абонемент</a>
-          </section>
-        </div>
-      </div>
-    </section>
-
-    <!-- Блок Промо -->
-
-    <section class="promo">
-      <div class="promo__inner">
-        <div class="promo__content">
-          <h2>SUPER GAMES</h2>
-          <div class="promo__wrapper">
-            <ul class="promo__list-date">
-              <li class="promo__item promo__item--title">Дата</li>
-              <li class="promo__item promo__item--date">7</li>
-              <li class="promo__item promo__item--month">Марта 2019</li>
-            </ul>
-            <ul class="promo__list-time">
-              <li class="promo__item promo__item--text">Время</li>
-              <li class="promo__item promo__item--time">12:00</li>
+    <section class="main-screen">
+      <div class="main-screen__wrapper">
+        <div class="main-screen__container">
+          <div class="main-screen__title">
+            <h1>Фитнес центр</h1>
+            <ul class="main-screen__list offer-list">
+              <li class="offer-list__item">
+                <a href="#">Тренажёрный зал</a>
+              </li>
+              <li class="offer-list__item">
+                <a href="#">Групповые занятия</a>
+              </li>
+              <li class="offer-list__item">
+                <a href="#">Кардио-зона</a>
+              </li>
             </ul>
           </div>
-          <p>Ежегодные соревнования по CrossFit</p>
-          <a href="#" class="promo__link btn btn--promo">
-            заполнить заявку
-          </a>
+          <p>Омск</p>
+        <a class="main-screen__button button scroll-to-subscription" href="#anchor-subscription">Купить абонемент</a>
         </div>
-      </div>
-    </section>
-
-    <!-- Блок Тренеры -->
-
-    <section class="trainer">
-      <div class="trainer__inner">
-        <h2>Тренеры</h2>
-        <div id="slider-trainer" class="trainer__content slider-trainer">
-          <button class="button-slider button-slider--prev slider-control-left slider-control" type="button" aria-label="кнопка предыдущий слайд">
-          </button>
-          <ul class="slider-trainer__list slider-wrapper">
-
-            <li class="slider-trainer__item slider-item" tabindex="0">
-              <img src="img/coach-pavlova-desktop@1x.jpg" alt="фото Анна Павлова" width="260" height="294" srcset="img/coach-pavlova-desktop@1x.jpg 1x, img/coach-pavlova-desktop@2x.jpg 2x">
-              <p>Анна Павлова</p>
-              <div class="slider-trainer__card">
-                <p>Анна Павлова</p>
-                <p>CrossFit</p>
-                <ul>
-                  <li>Certified Level 3 Trainer</li>
-                  <li>Победитель чемпионата России по CrossFit</li>
-                  <li>Опыт — 6 лет</li>
-                </ul>
-              </div>
-            </li>
-
-            <li class="slider-trainer__item slider-item" tabindex="0">
-              <img src="img/coach-lavrov-desktop@1x.jpg" alt="фото Алексей Лавров" width="260" height="294" srcset="img/coach-lavrov-desktop@1x.jpg 1x, img/coach-lavrov-desktop@2x.jpg 2x">
-              <p>Алексей Лавров</p>
-              <div class="slider-trainer__card">
-                <p>Алексей Лавров</p>
-                <p>CrossFit</p>
-                <ul>
-                  <li>Certified Level 3 Trainer</li>
-                  <li>Победитель чемпионата России по CrossFit</li>
-                  <li>Опыт — 6 лет</li>
-                </ul>
-              </div>
-            </li>
-
-            <li class="slider-trainer__item slider-item" tabindex="0">
-              <img src="img/coach-pashkov-desktop@1x.jpg" alt="фото Александр Пашков" width="260" height="294" srcset="img/coach-pashkov-desktop@1x.jpg 1x, img/coach-pashkov-desktop@2x.jpg 2x">
-              <p>Александр Пашков</p>
-              <div class="slider-trainer__card">
-                <p>Александр Пашков</p>
-                <p>CrossFit</p>
-                <ul>
-                  <li>Certified Level 3 Trainer</li>
-                  <li>Победитель чемпионата России по CrossFit</li>
-                  <li>Опыт — 6 лет</li>
-                </ul>
-              </div>
-            </li>
-
-            <li class="slider-trainer__item slider-item" tabindex="0">
-              <img src="img/coach-ketova-desktop@1x.jpg" alt="фото Мария Кетова" width="260" height="294" srcset="img/coach-ketova-desktop@1x.jpg 1x, img/coach-ketova-desktop@2x.jpg 2x">
-              <p>Мария Кетова</p>
-              <div class="slider-trainer__card">
-                <p>Мария Кетова</p>
-                <p>CrossFit</p>
-                <ul>
-                  <li>Certified Level 3 Trainer</li>
-                  <li>Победитель чемпионата России по CrossFit</li>
-                  <li>Опыт — 6 лет</li>
-                </ul>
-              </div>
-            </li>
-
-            <li class="slider-trainer__item slider-item" tabindex="0">
-              <img src="img/coach-pavlova-desktop@1x.jpg" alt="фото Анна Павлова" width="260" height="294" srcset="img/coach-pavlova-desktop@1x.jpg 1x, img/coach-pavlova-desktop@2x.jpg 2x">
-              <p>Анна Павлова</p>
-              <div class="slider-trainer__card">
-                <p>Анна Павлова</p>
-                <p>CrossFit</p>
-                <ul>
-                  <li>Certified Level 3 Trainer</li>
-                  <li>Победитель чемпионата России по CrossFit</li>
-                  <li>Опыт — 6 лет</li>
-                </ul>
-              </div>
-            </li>
-
-            <li class="slider-trainer__item slider-item" tabindex="0">
-              <img src="img/coach-pavlova-desktop@1x.jpg" alt="фото Анна Павлова" width="260" height="294" srcset="img/coach-pavlova-desktop@1x.jpg 1x, img/coach-pavlova-desktop@2x.jpg 2x">
-              <p>Анна Павлова</p>
-              <div class="slider-trainer__card">
-                <p>Анна Павлова</p>
-                <p>CrossFit</p>
-                <ul>
-                  <li>Certified Level 3 Trainer</li>
-                  <li>Победитель чемпионата России по CrossFit</li>
-                  <li>Опыт — 6 лет</li>
-                </ul>
-              </div>
-            </li>
-
-            <li class="slider-trainer__item slider-item" tabindex="0">
-              <img src="img/coach-pavlova-desktop@1x.jpg" alt="фото Анна Павлова" width="260" height="294" srcset="img/coach-pavlova-desktop@1x.jpg 1x, img/coach-pavlova-desktop@2x.jpg 2x">
-              <p>Анна Павлова</p>
-              <div class="slider-trainer__card">
-                <p>Анна Павлова</p>
-                <p>CrossFit</p>
-                <ul>
-                  <li>Certified Level 3 Trainer</li>
-                  <li>Победитель чемпионата России по CrossFit</li>
-                  <li>Опыт — 6 лет</li>
-                </ul>
-              </div>
-            </li>
-
-            <li class="slider-trainer__item slider-item" tabindex="0">
-              <img src="img/coach-pavlova-desktop@1x.jpg" alt="фото Анна Павлова" width="260" height="294" srcset="img/coach-pavlova-desktop@1x.jpg 1x, img/coach-pavlova-desktop@2x.jpg 2x">
-              <p>Анна Павлова</p>
-              <div class="slider-trainer__card">
-                <p>Анна Павлова</p>
-                <p>CrossFit</p>
-                <ul>
-                  <li>Certified Level 3 Trainer</li>
-                  <li>Победитель чемпионата России по CrossFit</li>
-                  <li>Опыт — 6 лет</li>
-                </ul>
-              </div>
-            </li>
-
-          </ul>
-          <button class="button-slider button-slider--next slider-control-right slider-control" type="button" aria-label="кнопка следующий слайд">
-          </button>
-        </div>
-      </div>
-    </section>
-
-    <!-- Блок Преимущества -->
-
-    <section class="advantage">
-      <div class="advantage__inner">
-        <h2>Наши преимущества</h2>
-        <ul class="advantage__row">
-
-          <li class="advantage__card advantage__card--center">
-            <p>100</p>
-            <h3>Тренажеров</h3>
-            <p>Современные тренажеры на все группы мышц</p>
+          <!--width="500" height="556"
+              media="(max-width: 1199px) width="324" height="390"-->
+          <img class="main-screen__img" src="img/main-img.jpg" srcset="img/main-img.jpg 1x, img/main-img@2x.jpg 2x" width="500" height="556" alt="SuperGym">
+        <ul class="main-screen__social social">
+          <li class="social__item">
+            <a class="social__link" href="#"><span class="visually-hidden">Мы в Фейсбуке</span>
+              <svg width="12" height="9" viewBox="0 0 12 9" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.55859 5.23242H1.67578V9H0.603516V0.46875H5.04492V1.39453H1.67578V4.3125H4.55859V5.23242ZM6.36914 9V0.46875H8.80078C9.57812 0.46875 10.1621 0.658203 10.5527 1.03711C10.9473 1.41602 11.1445 1.98438 11.1445 2.74219C11.1445 3.14062 11.0449 3.49219 10.8457 3.79688C10.6465 4.10156 10.377 4.33789 10.0371 4.50586C10.4277 4.62305 10.7363 4.86328 10.9629 5.22656C11.1934 5.58984 11.3086 6.02734 11.3086 6.53906C11.3086 7.30469 11.0977 7.90625 10.6758 8.34375C10.2578 8.78125 9.66016 9 8.88281 9H6.36914ZM7.44141 5.00977V8.08008H8.90625C9.3125 8.08008 9.63477 7.94727 9.87305 7.68164C10.1113 7.41211 10.2305 7.03516 10.2305 6.55078C10.2305 5.52344 9.79688 5.00977 8.92969 5.00977H7.44141ZM7.44141 4.10742H8.81836C9.18945 4.10742 9.48828 3.98242 9.71484 3.73242C9.94531 3.48242 10.0605 3.15039 10.0605 2.73633C10.0605 2.26758 9.95703 1.92773 9.75 1.7168C9.54297 1.50195 9.22656 1.39453 8.80078 1.39453H7.44141V4.10742Z" fill="white"></path></svg>
+            </a>
           </li>
+          <li class="social__item">
+            <a class="social__link" href="#"><span class="visually-hidden">Мы в ВКонтакте</span>
+              <svg width="14" height="9" viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.0918 7.35352L6.04297 0.46875H7.2207L4.56641 9H3.62891L0.980469 0.46875H2.15234L4.0918 7.35352ZM10.291 5.06836L9.45312 6.08203V9H8.38086V0.46875H9.45312V4.58789L10.1562 3.65625L12.4531 0.46875H13.7422L10.9707 4.22461L13.959 9H12.6758L10.291 5.06836Z" fill="white"></path></svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#"><span class="visually-hidden">Мы в Инстаграмме</span>
+              <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.94922 9H0.876953V0.46875H1.94922V9ZM9.16797 7.93945L8.98047 8.17383C8.44141 8.80273 7.65234 9.11719 6.61328 9.11719C5.69141 9.11719 4.9668 8.8125 4.43945 8.20312C3.91602 7.58984 3.64844 6.72461 3.63672 5.60742V3.93164C3.63672 2.73633 3.875 1.8418 4.35156 1.24805C4.83203 0.650391 5.54883 0.351562 6.50195 0.351562C7.31445 0.351562 7.94922 0.578125 8.40625 1.03125C8.86719 1.48437 9.12109 2.13086 9.16797 2.9707H8.0957C8.05273 2.43945 7.9043 2.02539 7.65039 1.72852C7.40039 1.42773 7.01953 1.27734 6.50781 1.27734C5.89453 1.27734 5.44531 1.47852 5.16016 1.88086C4.875 2.2793 4.72656 2.91797 4.71484 3.79688V5.53711C4.71484 6.39648 4.87891 7.05664 5.20703 7.51758C5.53516 7.97461 6.00586 8.20312 6.61914 8.20312C7.19727 8.20312 7.63672 8.0625 7.9375 7.78125L8.0957 7.63477V5.66602H6.53711V4.75195H9.16797V7.93945Z" fill="white"></path></svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
 
-          <li class="advantage__card">
-            <ul class="advantage__list">
-              <li class="advantage__item advantage__item--amount">
-                <svg role="img" width="108" height="49">
-                  <use xlink:href="#icon-900"></use>
-                </svg>
-              </li>
-              <li class="advantage__item advantage__item--feature">кв/м</li>
+    <section class="gym">
+      <div class="gym__wrapper">
+        <h2>Тренажерный зал</h2>
+        <h3>Просторный зал площадью 900 кв/м</h3>
+        <p>Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.</p>
+        <p>В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также в фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</p>
+      </div>
+      <!--<div class="gym__wrapper-img">-->
+        <!--width="660" height="401"
+            media="(max-width: 1199px) width="678" height="345"
+            media="(max-width: 767px) width="320" height="313"-->
+        <picture>
+          <source media="(max-width: 767px)" srcset="img/gym-mobile@1x.jpg 1x, img/gym-mobile@2x.jpg 2x">
+          <img class="gym__img" src="img/gym@1x.jpg" srcset="img/gym@1x.jpg 1x, img/gym@2x.jpg 2x" width="660" height="401" alt="SuperGym">
+        </picture>
+        <!--width="364" height="228"
+            media="(max-width: 1199px) width="266" height="167"
+            media="(max-width: 767px) width="320" height="167"-->
+        <div class="gym__video">
+          <img src="img/gym-video@1x.jpg" srcset="img/gym-video@1x.jpg 1x, img/gym-video@2x.jpg 2x" width="364" height="228" alt="SuperGym video">
+          <a class="gym__video-play"></a>
+        </div>
+      <!--</div>-->
+    </section>
+
+    <section class="subscription" id="anchor-subscription">
+      <div class="subscription__wrapper">
+        <h2>Абонементы</h2>
+        <input class="visually-hidden" type="radio" id="tab-1" name="toggle" checked="">
+        <input class="visually-hidden" type="radio" id="tab-2" name="toggle">
+        <input class="visually-hidden" type="radio" id="tab-3" name="toggle">
+        <div class="subscription__slider-controls">
+          <label for="tab-1" tabindex="0">1 месяц</label>
+          <label for="tab-2" tabindex="0">6 месяцев</label>
+          <label for="tab-3" tabindex="0">12 месяцев</label>
+        </div>
+        <ul class="subscription__list subscription-list subscription-list--month">
+          <li class="subscription-list__item">
+            <h3>С тренером</h3>
+            <p>12 занятий</p>
+            <p class="subscription-list__price-wrapper">
+              <span class="subscription-list__price">5000<span class="subscription-list__price-bg">5000</span></span>
+            </p>
+            <a href="#" class="subscription-list__button button button--buy">Купить абонемент</a>
+          </li>
+          <li class="subscription-list__item">
+            <h3>Дневной</h3>
+            <p>с 8:00 до 17:00</p>
+            <p class="subscription-list__price-wrapper">
+              <span class="subscription-list__price">1700<span class="subscription-list__price-bg">1700</span></span>
+            </p>
+            <a href="#" class="subscription-list__button button button--buy">Купить абонемент</a>
+          </li>
+          <li class="subscription-list__item">
+            <h3>Полный день</h3>
+            <p>с 8:00 до 22:00</p>
+            <p class="subscription-list__price-wrapper">
+              <span class="subscription-list__price">2700<span class="subscription-list__price-bg">2700</span></span>
+            </p>
+            <a href="#" class="subscription-list__button button button--buy">Купить абонемент</a>
+          </li>
+        </ul>
+        <ul class="subscription__list subscription-list subscription-list--half-year">
+          <li class="subscription-list__item">
+            <h3>С тренером</h3>
+            <p>72 занятия</p>
+            <p class="subscription-list__price-wrapper">
+              <span class="subscription-list__price">30000<span class="subscription-list__price-bg">30000</span></span>
+            </p>
+            <a href="#" class="subscription-list__button button button--buy">Купить абонемент</a>
+          </li>
+          <li class="subscription-list__item">
+            <h3>Дневной</h3>
+            <p>с 8:00 до 17:00</p>
+            <p class="subscription-list__price-wrapper">
+              <span class="subscription-list__price">10200<span class="subscription-list__price-bg">10200</span></span>
+            </p>
+            <a href="#" class="subscription-list__button button button--buy">Купить абонемент</a>
+          </li>
+          <li class="subscription-list__item">
+            <h3>Полный день</h3>
+            <p>с 8:00 до 22:00</p>
+            <p class="subscription-list__price-wrapper">
+              <span class="subscription-list__price">16200<span class="subscription-list__price-bg">16200</span></span>
+            </p>
+            <a href="#" class="subscription-list__button button button--buy">Купить абонемент</a>
+          </li>
+        </ul>
+        <ul class="subscription__list subscription-list subscription-list--year">
+          <li class="subscription-list__item">
+            <h3>С тренером</h3>
+            <p>144 занятия</p>
+            <p class="subscription-list__price-wrapper">
+              <span class="subscription-list__price">60000<span class="subscription-list__price-bg">60000</span></span>
+            </p>
+            <a href="#" class="subscription-list__button button button--buy">Купить абонемент</a>
+          </li>
+          <li class="subscription-list__item">
+            <h3>Дневной</h3>
+            <p>с 8:00 до 17:00</p>
+            <p class="subscription-list__price-wrapper">
+              <span class="subscription-list__price">20400<span class="subscription-list__price-bg">20400</span></span>
+            </p>
+            <a href="#" class="subscription-list__button button button--buy">Купить абонемент</a>
+          </li>
+          <li class="subscription-list__item">
+            <h3>Полный день</h3>
+            <p>с 8:00 до 22:00</p>
+            <p class="subscription-list__price-wrapper">
+              <span class="subscription-list__price">32400<span class="subscription-list__price-bg">32400</span></span>
+            </p>
+            <a href="#" class="subscription-list__button button button--buy">Купить абонемент</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="promo">
+      <div class="promo__wrapper">
+        <div class="promo__title">
+          <h2>Super Games</h2>
+          <div class="promo__table">
+            <div class="promo__column">
+              <p class="promo__column-th">Дата</p>
+              <span class="promo__data promo__data--month">7<span class="promo__month">Марта 2019</span></span>
+            </div>
+            <div class="promo__column">
+              <p class="promo__column-th">Время</p>
+              <span class="promo__data">12:00</span>
+            </div>
+          </div>
+        </div>
+        <p class="promo__text">Ежегодные соревнования по CrossFit</p>
+        <a class="promo__button button button--promo" href="#">Заполнить заявку</a>
+      </div>
+      <div class="promo__img">
+      <!--width="660" height="500"
+          media="(max-width: 1199px) width="386" height="292"
+          media="(max-width: 767px) width="290" height="292"-->
+        <picture>
+          <source media="(max-width: 767px)" srcset="img/promo-mobile@1x.jpg 1x, img/promo-mobile@2x.jpg 2x">
+          <img src="img/promo@1x.jpg" srcset="img/promo@1x.jpg 1x, img/promo@2x.jpg 2x" width="660" height="500" alt="SuperGym">
+        </picture>
+      </div>
+    </section>
+
+    <section class="coaches">
+      <h2>Тренеры</h2>
+      <div class="coaches__list coaches-list">
+        <div class="coaches-list__item">
+          <div class="coaches-list__img">
+            <!--width="260" height="294"
+                media="(max-width: 1199px) width="268" height="294"
+                media="(max-width: 767px) width="226" height="274"-->
+            <img src="img/coach-1@1x.jpg" srcset="img/coach-1@1x.jpg 1x, img/coach-1@2x.jpg 2x" width="260" height="294" alt="Анна Павлова">
+            <p class="coaches-list__name">Анна Павлова</p>
+          </div>
+          <div class="coaches-list__actions">
+            <p class="coaches-list__coache-name">Анна Павлова</p>
+            <p>CrossFit</p>
+            <ul class="coaches-list__advances advances-list">
+              <li class="advances-list__item">Certified Level 3 Trainer</li>
+              <li class="advances-list__item">Победитель чемпионата России по CrossFit</li>
+              <li class="advances-list__item">Опыт — 6 лет</li>
             </ul>
-            <div class="advantage__text">
+          </div>
+        </div>
+        <div class="coaches-list__item">
+          <div class="coaches-list__img">
+            <img src="img/coach-2@1x.jpg" srcset="img/coach-2@1x.jpg 1x, img/coach-2@2x.jpg 2x" width="260" height="294" alt="Алексей Лавров">
+            <p class="coaches-list__name">Алексей Лавров</p>
+          </div>
+          <div class="coaches-list__actions">
+            <p class="coaches-list__coache-name">Алексей Лавров</p>
+            <p>CrossFit</p>
+            <ul class="coaches-list__advances advances-list">
+              <li class="advances-list__item">Certified Level 3 Trainer</li>
+              <li class="advances-list__item">Опыт — 7 лет</li>
+            </ul>
+          </div>
+        </div>
+        <div class="coaches-list__item">
+          <div class="coaches-list__img">
+            <img src="img/coach-3@1x.jpg" srcset="img/coach-3@1x.jpg 1x, img/coach-3@2x.jpg 2x" width="260" height="294" alt="Александр Пашков">
+            <p class="coaches-list__name">Александр Пашков</p>
+          </div>
+          <div class="coaches-list__actions">
+            <p class="coaches-list__coache-name">Александр Пашков</p>
+            <p>CrossFit</p>
+            <ul class="coaches-list__advances advances-list">
+              <li class="advances-list__item">Certified Level 2 Trainer</li>
+              <li class="advances-list__item">Победитель чемпионата России по CrossFit</li>
+              <li class="advances-list__item">Опыт — 6 лет</li>
+            </ul>
+          </div>
+        </div>
+        <div class="coaches-list__item">
+          <div class="coaches-list__img">
+            <img src="img/coach-4@1x.jpg" srcset="img/coach-4@1x.jpg 1x, img/coach-4@2x.jpg 2x" width="260" height="294" alt="Мария Кетова">
+            <p class="coaches-list__name">Мария Кетова</p>
+          </div>
+          <div class="coaches-list__actions">
+            <p class="coaches-list__coache-name">Мария Кетова</p>
+            <p>CrossFit</p>
+            <ul class="coaches-list__advances advances-list">
+              <li class="advances-list__item">Certified Level 4 Trainer</li>
+              <li class="advances-list__item">Опыт — 5 лет</li>
+            </ul>
+          </div>
+        </div>
+        <div class="coaches-list__item">
+          <div class="coaches-list__img">
+            <img src="img/coach-4@1x.jpg" srcset="img/coach-4@1x.jpg 1x, img/coach-4@2x.jpg 2x" width="260" height="294" alt="Мария Кетова">
+            <p class="coaches-list__name">Мария Кетова</p>
+          </div>
+          <div class="coaches-list__actions">
+            <p class="coaches-list__coache-name">Мария Кетова</p>
+            <p>CrossFit</p>
+            <ul class="coaches-list__advances advances-list">
+              <li class="advances-list__item">Certified Level 4 Trainer</li>
+              <li class="advances-list__item">Опыт — 5 лет</li>
+            </ul>
+          </div>
+        </div>
+        <div class="coaches-list__item">
+          <div class="coaches-list__img">
+            <img src="img/coach-2@1x.jpg" srcset="img/coach-2@1x.jpg 1x, img/coach-2@2x.jpg 2x" width="260" height="294" alt="Алексей Лавров">
+            <p class="coaches-list__name">Алексей Лавров</p>
+          </div>
+          <div class="coaches-list__actions">
+            <p class="coaches-list__coache-name">Алексей Лавров</p>
+            <p>CrossFit</p>
+            <ul class="coaches-list__advances advances-list">
+              <li class="advances-list__item">Certified Level 3 Trainer</li>
+              <li class="advances-list__item">Опыт — 7 лет</li>
+            </ul>
+          </div>
+        </div>
+        <div class="coaches-list__item">
+          <div class="coaches-list__img">
+            <img src="img/coach-1@1x.jpg" srcset="img/coach-1@1x.jpg 1x, img/coach-1@2x.jpg 2x" width="260" height="294" alt="Анна Павлова">
+            <p class="coaches-list__name">Анна Павлова</p>
+          </div>
+          <div class="coaches-list__actions">
+            <p class="coaches-list__coache-name">Анна Павлова</p>
+            <p>CrossFit</p>
+            <ul class="coaches-list__advances advances-list">
+              <li class="advances-list__item">Certified Level 3 Trainer</li>
+              <li class="advances-list__item">Победитель чемпионата России по CrossFit</li>
+              <li class="advances-list__item">Опыт — 6 лет</li>
+            </ul>
+          </div>
+        </div>
+        <div class="coaches-list__item">
+          <div class="coaches-list__img">
+            <img src="img/coach-1@1x.jpg" srcset="img/coach-1@1x.jpg 1x, img/coach-1@2x.jpg 2x" width="260" height="294" alt="Анна Павлова">
+            <p class="coaches-list__name">Анна Павлова</p>
+          </div>
+          <div class="coaches-list__actions">
+            <p class="coaches-list__coache-name">Анна Павлова</p>
+            <p>CrossFit</p>
+            <ul class="coaches-list__advances advances-list">
+              <li class="advances-list__item">Certified Level 3 Trainer</li>
+              <li class="advances-list__item">Победитель чемпионата России по CrossFit</li>
+              <li class="advances-list__item">Опыт — 6 лет</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="advantages">
+      <div class="advantages__wrapper">
+        <h2>Наши преимущества</h2>
+        <ul class="advantages__list advantages-list">
+          <li class="advantages-list__item advantages-list__item--left">
+            <span class="advantages-list__value advantages-list__value--square"><span>кв/м</span></span>
+            <div class="advantages-list__item-wrapper">
               <h3>Площадь</h3>
               <p>Занимайтесь без очередей и толкучки</p>
             </div>
           </li>
-
-          <li class="advantage__card">
-            <ul class="advantage__list">
-              <li class="advantage__item advantage__item--amount">
-                <svg role="img" width="72" height="49">
-                  <use xlink:href="#icon-70"></use>
-                </svg>
-              </li>
-              <li class="advantage__item advantage__item--feature">машин</li>
-            </ul>
-            <div class="advantage__text">
+          <li class="advantages-list__item advantages-list__item--right">
+            <span class="advantages-list__value advantages-list__value--car"><span>машин</span></span>
+            <div class="advantages-list__item-wrapper">
               <h3>Собственная парковка</h3>
-              <p>Вы всегда найдете место для своей машины на нашей
-                парковке</p>
+              <p>Вы всегда найдете место для своей машины на нашей парковке</p>
             </div>
           </li>
-
-          <li class="advantage__card">
-            <ul class="advantage__list">
-              <li class="advantage__item advantage__item--amount">
-                <svg role="img" width="108" height="49">
-                  <use xlink:href="#icon-350"></use>
-                </svg>
-              </li>
-              <li class="advantage__item advantage__item--feature">мест</li>
-            </ul>
-            <div class="advantage__text">
+          <li class="advantages-list__item advantages-list__item--main">
+            <span class="advantages-list__value">100</span>
+            <div class="advantages-list__item-wrapper">
+              <h3>Тренажеров</h3>
+              <p>Современные тренажеры на все группы мышц</p>
+            </div>
+          </li>
+          <li class="advantages-list__item advantages-list__item--left">
+            <span class="advantages-list__value advantages-list__value--place"><span>мест</span></span>
+            <div class="advantages-list__item-wrapper">
               <h3>Комфорт</h3>
               <p>Просторные раздевалки, душевые, фен, Wi-Fi, кулеры</p>
             </div>
           </li>
-
-          <li class="advantage__card">
-            <ul class="advantage__list">
-              <li class="advantage__item advantage__item--amount">
-                <svg role="img" width="72" height="49">
-                  <use xlink:href="#icon-5"></use>
-                </svg>
-              </li>
-              <li class="advantage__item advantage__item--feature">лет</li>
-            </ul>
-            <div class="advantage__text">
+          <li class="advantages-list__item advantages-list__item--right">
+            <span class="advantages-list__value advantages-list__value--years"><span>лет</span></span>
+            <div class="advantages-list__item-wrapper">
               <h3>Тренерский опыт</h3>
               <p>Добивайтесь своих целей быстрее с профессиональным тренером</p>
             </div>
           </li>
-
         </ul>
       </div>
     </section>
 
-    <!-- Блок Акции -->
-
-    <section class="offer">
-      <div class="offer__inner">
-        <h2>Акции</h2>
-        <ul class="offer__list-year">
-          <li class="offer__item-year offer__item-year--color">
-            <h3>Год</h3>
-            <p>4999</p>
-            <p>Безлимитный абонемент в тренажерный зал</p>
-            <a href="#" class="offer__link-year">подробнее</a>
-          </li>
-          <li class="offer__item-year offer__item-year--picture">
-            <img src="img/offer-desktop@1x.jpg" alt="фото спортсменки" width="280" height="462" srcset="img/offer-desktop@1x.jpg 1x, img/offer-desktop@2x.jpg 2x">
-          </li>
-        </ul>
-        <ul class="offer__list-extra">
-          <li class="offer__item-extra">
-            <h3>Месяц бесплатно</h3>
-            <p>Приведи друга, получи абонемент в подарок</p>
-            <a href="#" class="offer__link">подробнее</a>
-          </li>
-          <li class="offer__item-extra">
-            <h3>Скидка 20%</h3>
-            <p>Корпоративный фитнес с командой</p>
-            <a href="#" class="offer__link">подробнее</a>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- Блок Отзывы -->
-
-    <section class="recall">
-      <div class="recall__inner">
-        <h2>Отзывы</h2>
-        <div id="slider-recall" class="recall__content">
-          <button class="recall__button recall__button--prev slider-control-left slider-control" type="button" aria-label="кнопка предыдущий слайд">
-          </button>
-          <ul class="recall__list slider-wrapper">
-            <li class="recall__item slider-item">
-              <h3>Анна Орлова</h3>
-              <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал
-                дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
-            </li>
-            <li class="recall__item slider-item">
-              <h3>Анна Орлова</h3>
-              <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал
-                дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
-            </li>
-            <li class="recall__item slider-item">
-              <h3>Анна Орлова</h3>
-              <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал
-                дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
-            </li>
-          </ul>
-          <button class="recall__button recall__button--next slider-control-right slider-control" type="button" aria-label="кнопка следующий слайд">
-          </button>
-        </div>
-      </div>
-    </section>
-
-    <!-- Блок Контакты -->
-
-    <section class="contact">
-      <div class="contact__content">
-        <div class="contact__background-form">
-          <form action="#" class="form" method="GET">
-            <h2>Бесплатное занятие</h2>
-            <div class="form__group">
-              <input type="text" id="user-name" name="username" placeholder="Имя" required="required">
-              <label class="form__label visually-hidden" for="user-name">Поле для ввода Имени</label>
-              <input type="tel" id="user-phone" name="userphone" pattern="\+[0-9]{1} \([0-9]{3}\) [0-9]{3} [0-9]{2} [0-9]{2}" maxlength="18" placeholder="Телефон" required="">
-              <label class="form__label visually-hidden" for="user-phone">Поле для ввода номера телефона в формате +7
-                (000)000 00
-                00</label>
-            </div>
-            <button class="form__button btn btn--send" type="submit">Отправить</button>
-          </form>
-        </div>
-
-        <div class="contact__background-column">
-          <div class="contact__column">
-            <h2>Контакты</h2>
-
-            <ul class="contact__list">
-
-              <li class="contact__item">
-                <span>Адрес:</span>
-                <address class="contact__address">г. Омск, ул. 60 лет Октября, 7</address>
-              </li>
-
-              <li class="contact__item">
-                <span>Телефон:</span>
-                <a class="contact__link-phone" href="tel:8-800-555-55-55">8-800-555-55-55</a>
-              </li>
-
-              <li class="contact__item">
-                <span>График работы:</span>
-                <p>Пн-Вс: с 8:00 до 22:00</p>
-              </li>
-
-              <li class="contact__item">
-                <span>Email:</span>
-                <a class="contact__link-email" href="mailto:omsk@supergym.ru">omsk@supergym.ru</a>
-              </li>
-
-            </ul>
+    <section class="sales">
+      <h2>Акции</h2>
+      <div class="sales__wrapper">
+        <div class="sales__main">
+          <div class="sales__text">
+            <p class="sales__title">Год</p>
+            <p class="sales__price">4999</p>
+            <p class="sales__content">Безлимитный абонемент в тренажерный зал</p>
+            <a href="#">Подробнее</a>
+          </div>
+          <div class="sales__img">
+          <!--width="280" height="462"
+              media="(max-width: 1199px) width="399" height="462"
+              media="(max-width: 767px) width="290" height="299"-->
+            <picture>
+              <source media="(max-width: 1199px)" srcset="img/sale-tablet@1x.jpg 1x, img/sale-tablet@2x.jpg 2x">
+              <img src="img/sale@1x.jpg" srcset="img/sale@1x.jpg 1x, img/sale@2x.jpg 2x" width="280" height="462" alt="sale">
+            </picture>
           </div>
         </div>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- Футер -->
-
-  <footer class="footer">
-    <div class="footer__inner">
-      <div class="footer__row">
-        <a href="#" class="footer__logo-link" aria-label="Логотип фитнесс-центра Supergym">
-          Supergym
-        </a>
-        <nav class="footer__navigation"><a href="#" class="footer__navigation-link">Услуги</a>
-          <a href="#" class="footer__navigation-link">Абонементы</a>
-          <a href="#" class="footer__navigation-link">Акции</a>
-          <a href="#" class="footer__navigation-link">Тренеры</a>
-          <a href="#" class="footer__navigation-link">Расписание</a></nav>
-
-        <ul class="footer__list-social">
-          <li class="footer__item-social">
-            <a class="footer__social-link" href="#" aria-label="Supergym во Вконтакте">
-              <svg role="img" width="24" height="13">
-                <use xlink:href="#icon-vk"></use>
-              </svg>
-            </a>
+        <ul class="sales__list sales-list">
+          <li class="sales-list__item">
+            <h3>Месяц бесплатно</h3>
+            <p>Приведи друга, получи абонемент в подарок</p>
+            <a href="#">Подробнее</a>
           </li>
-          <li class="footer__item-social">
-            <a class="footer__social-link" href="#" aria-label="Supergym в Инстаграмме">
-              <svg role="img" width="24" height="24">
-                <use xlink:href="#icon-insta"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="footer__item-social">
-            <a class="footer__social-link" href="#" aria-label="Supergym в Фейсбуке">
-              <svg role="img" width="12" height="24">
-                <use xlink:href="#icon-fb"></use>
-              </svg>
-            </a>
+          <li class="sales-list__item">
+            <h3>Скидка 20%</h3>
+            <p>Корпоративный фитнес с командой</p>
+            <a href="#">Подробнее</a>
           </li>
         </ul>
       </div>
+    </section>
+
+    <section class="responses">
+      <h2>Отзывы</h2>
+      <div class="responses__list responses-list">
+        <div class="responses-list__item">
+          <div class="responses-list__img">
+            <!--width="80" height="78"
+                media="(max-width: 1199px) width="80" height="80"
+                media="(max-width: 767px) width="68" height="68s"-->
+            <img src="img/response-1@1x.png" srcset="img/response-1@1x.png 1x, img/response-1@2x.png 2x" width="80" height="80" alt="Анна Орлова">
+          </div>
+          <h3>Анна Орлова</h3>
+          <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+        </div>
+        <div class="responses-list__item">
+          <div class="responses-list__img">
+            <img src="img/response-1@1x.png" srcset="img/response-1@1x.png 1x, img/response-1@2x.png 2x" width="80" height="80" alt="Анна Орлова">
+          </div>
+          <h3>Анна Орлова</h3>
+          <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="block-wrapper">
+      <div class="block-wrapper__columns">
+        <section class="feedback">
+          <h2>Бесплатное занятие</h2>
+          <form class="feedback__form feedback-form" action="https://echo.htmlacademy.ru" method="post">
+            <div class="feedback-form__wrapper">
+              <p class="feedback-form__item">
+                <label class="visually-hidden" for="user-name">Имя</label>
+                <input id="user-name" type="text" name="name" placeholder="Имя" required="">
+              </p>
+              <p class="feedback-form__item">
+                <label class="visually-hidden" for="user-phone">Телефон</label>
+                <input id="user-phone" type="tel" name="phone" placeholder="Телефон" required="">
+              </p>
+            </div>
+            <button class="feedback__button button button--feedback" id="submit-feedback" type="submit" onclick="onTestPhone()">Отправить</button>
+          </form>
+        </section>
+
+        <section class="contacts">
+          <h2>Контакты</h2>
+          <div class="contacts__wrapper">
+            <ul class="contacts__list contact-list">
+              <li class="contact-list__item">
+                <p class="contact-list__title">Адрес:</p>
+                <p class="contact-list__data">г. Омск, ул. 60 лет Октября, 7</p>
+              </li>
+              <li class="contact-list__item">
+                <p class="contact-list__title">График работы:</p>
+                <p class="contact-list__data">Пн-Вс: с 8:00 до 22:00 </p>
+              </li>
+            </ul>
+            <ul class="contacts__list contact-list">
+              <li class="contact-list__item">
+                <p class="contact-list__title">Телефон:</p>
+                <a class="contact-list__data" href="tel:+78005555555">8-800-555-55-55</a>
+              </li>
+              <li class="contact-list__item">
+                <p class="contact-list__title">Email:</p>
+                <a class="contact-list__data" href="mailto:omsk@supergym.ru">omsk@supergym.ru</a>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <a class="page-footer__logo">SuperGym</a>
+      <ul class="page-footer__sections section-list">
+        <li class="section-list__item"><a href="#">Услуги</a></li>
+        <li class="section-list__item"><a href="#">Абонементы</a></li>
+        <li class="section-list__item"><a href="#">Акции</a></li>
+        <li class="section-list__item"><a href="#">Тренеры</a></li>
+        <li class="section-list__item"><a href="#">Расписание</a></li>
+      </ul>
+      <ul class="page-footer__social social-list">
+        <li class="social-list__item">
+          <a class="social-list__link social-list__link--vk" href="#">
+            <span class="visually-hidden">Мы в ВКонтакте</span>
+            <svg width="24" height="13" viewBox="0 0 24 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M20.6554 8.26599C21.4515 9.00996 22.2918 9.70992 23.0058 10.5289C23.3212 10.8929 23.6199 11.2684 23.8483 11.6908C24.172 12.2912 23.8788 12.9519 23.3163 12.9878L19.82 12.9863C18.9182 13.0579 18.1988 12.7104 17.5939 12.1203C17.1098 11.6483 16.6615 11.146 16.1961 10.6581C16.0052 10.4587 15.8055 10.2711 15.5669 10.1228C15.0896 9.82623 14.6753 9.91703 14.4025 10.3935C14.1247 10.8781 14.0617 11.4148 14.0344 11.9549C13.997 12.7429 13.7481 12.9501 12.9211 12.9862C11.1537 13.066 9.47629 12.81 7.91806 11.9566C6.54426 11.2043 5.47894 10.1422 4.5517 8.93977C2.74634 6.59842 1.36379 4.02567 0.121208 1.38084C-0.158487 0.784951 0.0460603 0.465084 0.732957 0.453762C1.87358 0.432554 3.01405 0.434063 4.15601 0.452253C4.61959 0.458744 4.92649 0.713249 5.10549 1.13244C5.7226 2.58483 6.47771 3.96665 7.42553 5.24748C7.67794 5.58848 7.93532 5.92948 8.30184 6.16949C8.7073 6.43524 9.01602 6.34716 9.20677 5.91484C9.32781 5.64071 9.3808 5.34544 9.40808 5.05184C9.49845 4.04175 9.51035 3.03338 9.35186 2.02684C9.25455 1.39865 8.88488 0.991982 8.23 0.873108C7.89582 0.8125 7.94558 0.693475 8.10738 0.510898C8.38842 0.196012 8.65274 0 9.17964 0H13.1311C13.7532 0.117516 13.8913 0.385004 13.9765 0.984133L13.9799 5.18536C13.9731 5.4173 14.1009 6.10556 14.5374 6.25908C14.8867 6.36837 15.117 6.10088 15.3265 5.88887C16.2726 4.92776 16.9479 3.79192 17.5511 2.61578C17.8188 2.09861 18.049 1.56153 18.2721 1.02489C18.4373 0.626678 18.6967 0.430742 19.1653 0.439422L22.9684 0.442667C23.0811 0.442667 23.1952 0.444252 23.3044 0.46214C23.9453 0.566675 24.1209 0.830539 23.923 1.42952C23.6111 2.36927 23.0043 3.15241 22.411 3.93917C21.7768 4.77915 21.0985 5.59036 20.4696 6.43532C19.8917 7.20691 19.9376 7.59584 20.6554 8.26599Z" fill="white"></path></svg>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link social-list__link--insta" href="#">
+            <span class="visually-hidden">Мы в Инстаграмме</span>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17.5034 0H6.49658C2.91431 0 0 2.91431 0 6.49658V17.5036C0 21.0857 2.91431 24 6.49658 24H17.5036C21.0857 24 24 21.0857 24 17.5036V6.49658C24 2.91431 21.0857 0 17.5034 0V0ZM12 18.5623C8.38147 18.5623 5.43768 15.6185 5.43768 12C5.43768 8.38147 8.38147 5.43768 12 5.43768C15.6185 5.43768 18.5623 8.38147 18.5623 12C18.5623 15.6185 15.6185 18.5623 12 18.5623ZM18.7192 6.98529C17.6499 6.98529 16.7802 6.11554 16.7802 5.0462C16.7802 3.97687 17.6499 3.10693 18.7192 3.10693C19.7886 3.10693 20.6585 3.97687 20.6585 5.0462C20.6585 6.11554 19.7886 6.98529 18.7192 6.98529Z" fill="white"></path><path d="M12.0001 6.84448C9.15753 6.84448 6.84473 9.1571 6.84473 11.9998C6.84473 14.8423 9.15753 17.1552 12.0001 17.1552C14.8428 17.1552 17.1554 14.8423 17.1554 11.9998C17.1554 9.1571 14.8428 6.84448 12.0001 6.84448Z" fill="white"></path><path d="M18.7186 4.51392C18.4253 4.51392 18.1865 4.75269 18.1865 5.04602C18.1865 5.33936 18.4253 5.57812 18.7186 5.57812C19.0121 5.57812 19.2509 5.33954 19.2509 5.04602C19.2509 4.7525 19.0121 4.51392 18.7186 4.51392Z" fill="white"></path></svg>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link social-list__link--fb" href="#">
+            <span class="visually-hidden">Мы в Фейсбуке</span>
+            <svg width="12" height="24" viewBox="0 0 12 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11.5481 0.0049936L8.66986 0C5.43624 0 3.34653 2.31828 3.34653 5.90643V8.62969H0.452578C0.202506 8.62969 0 8.84891 0 9.11932V13.065C0 13.3354 0.202736 13.5544 0.452578 13.5544H3.34653V23.5106C3.34653 23.781 3.54904 24 3.79911 24H7.5749C7.82497 24 8.02748 23.7808 8.02748 23.5106V13.5544H11.4112C11.6613 13.5544 11.8638 13.3354 11.8638 13.065L11.8652 9.11932C11.8652 8.98948 11.8174 8.86514 11.7326 8.77326C11.6479 8.68138 11.5324 8.62969 11.4123 8.62969H8.02748V6.32115C8.02748 5.21157 8.27201 4.64829 9.60873 4.64829L11.5477 4.64755C11.7975 4.64755 12 4.42833 12 4.15817V0.494367C12 0.224462 11.7977 0.00549296 11.5481 0.0049936Z" fill="white"></path></svg>
+          </a>
+        </li>
+      </ul>
     </div>
   </footer>
 
-  <script src="js/main.js"></script>
   <script src="js/vendor.js"></script>
-
+  <script src="js/script.js"></script>
 </body>
-
 </html>

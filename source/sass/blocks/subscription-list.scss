@@ -1,0 +1,231 @@
+.subscription-list {
+  display: none;
+}
+
+#tab-1:checked ~ .subscription-list--month,
+#tab-2:checked ~ .subscription-list--half-year,
+#tab-3:checked ~ .subscription-list--year {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  @include list-reset();
+  @include font(16px, 24px);
+  color: $color-text;
+
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    right: -237px;
+    bottom: -149px;
+    width: 425px;
+    height: 414px;
+    background-image: url("../img/subscription-bg@1x.png");
+    background-repeat: no-repeat;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/subscription-bg@2x.png");
+    }
+  }
+}
+
+.subscription__slider-controls label {
+  padding-bottom: 12px;
+  opacity: 0.5;
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+  }
+}
+
+#tab-1:checked ~ .subscription__slider-controls label[for="tab-1"],
+#tab-2:checked ~ .subscription__slider-controls label[for="tab-2"],
+#tab-3:checked ~ .subscription__slider-controls label[for="tab-3"] {
+  background-size: 100% 2px;
+  background-image: linear-gradient(#D10A42 100%, transparent 100%);
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  opacity: 1;
+}
+
+#tab-1:focus ~ .subscription__slider-controls label[for="tab-1"],
+#tab-2:focus ~ .subscription__slider-controls label[for="tab-2"],
+#tab-3:focus ~ .subscription__slider-controls label[for="tab-3"] {
+  cursor: pointer;
+}
+
+.subscription-list h3 {
+  margin-bottom: 7px;
+  @include font(26px, 40px);
+}
+
+.subscription-list p {
+  margin: 7px 0;
+}
+
+.subscription-list .subscription-list__price-wrapper {
+  position: relative;
+  margin-top: 63px;
+  margin-bottom: 35px;
+}
+
+.subscription-list__price {
+  position: relative;
+  z-index: 1;
+  padding-right: 45px;
+  @include font(60px, 90px);
+  font-weight: 700;
+  color: $color-dark-blue;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 16px;
+    right: 2px;
+    width: 30px;
+    height: 42px;
+    background-image: url("../img/ruble.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.subscription-list__price-bg {
+  position: absolute;
+  z-index: -1;
+  top: -62px;
+  left: -20px;
+  @include font(100px, 150px);
+  font-weight: 700;
+  color: $color-grey;
+  opacity: 0.48;
+}
+
+.subscription-list--half-year .subscription-list__price-bg,
+.subscription-list--year .subscription-list__price-bg {
+  left: -30px;
+}
+
+.subscription-list__item {
+  position: relative;
+  z-index: 1;
+  width: 360px;
+  height: 448px;
+  padding: 23px 69px;
+  margin-right: 40px;
+  margin-bottom: 40px;
+  text-align: center;
+  background-color: $color-white;
+  border: 7px solid transparent;
+
+  &:hover {
+    border: 7px solid transparent;
+    border-image: linear-gradient(111.72deg, #ED0233 17.6%, #003EB7 95.31%);
+    border-image-slice: 1;
+  }
+
+  &:hover .subscription-list__button {
+    color: $color-white;
+    border: none;
+    background: linear-gradient(111.72deg, #ED0233 17.6%, #003EB7 95.31%);
+  }
+}
+
+.subscription-list__item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.subscription-list__button {
+  margin-bottom: 40px;
+}
+
+@media (max-width: $tablet-width) {
+  #tab-1:checked ~ .subscription-list--month,
+  #tab-2:checked ~ .subscription-list--half-year,
+  #tab-3:checked ~ .subscription-list--year {
+    flex-direction: column;
+    align-items: center;
+
+    &::after {
+      right: -199px;
+      bottom: -111px;
+      width: 384px;
+      height: 372px;
+      background-image: url("../img/subscription-bg-tablet@1x.png");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/subscription-bg-tablet@2x.png");
+      }
+    }
+  }
+
+  .subscription-list__item {
+    min-width: 442px;
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 42px;
+  }
+
+  .subscription-list__price::after {
+    top: 17px;
+    right: 0;
+  }
+
+  .subscription-list__price-bg {
+    top: -60px;
+    left: -20px;
+  }
+
+
+  .subscription-list .subscription-list__price-wrapper {
+    margin-bottom: 37px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  #tab-1:checked ~ .subscription-list--month::after,
+  #tab-2:checked ~ .subscription-list--half-year::after,
+  #tab-3:checked ~ .subscription-list--year::after {
+      display: none;
+   }
+
+  .subscription-list__item {
+    width: 100%;
+    min-width: 290px;
+    height: 384px;
+    margin-bottom: 36px;
+    padding: 23px 35px;
+  }
+
+  .subscription-list h3 {
+    @include font(22px, 24px);
+  }
+
+  .subscription-list__price {
+    @include font(48px, 72px);
+
+    &::after {
+      top: 13px;
+      right: -3px;
+      width: 24px;
+      height: 33px;
+      background-image: url("../img/ruble-mobile.svg");
+    }
+  }
+
+  .subscription-list .subscription-list__price-wrapper {
+    margin-top: 56px;
+    margin-bottom: 30px;
+  }
+
+  .subscription-list__price {
+    padding-right: 32px;
+  }
+
+  .subscription-list__price-bg {
+    top: -51px;
+    left: -16px;
+    @include font(80px, 120px);
+  }
+}

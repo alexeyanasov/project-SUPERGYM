@@ -1,0 +1,28 @@
+$tablet-width: 1199px;
+$mobile-width: 767px;
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;
+
+$font-title: "Bebas Neue", "Arial", sans-serif;
+$font-text: "Roboto Condensed", "Arial", sans-serif;
+
+$color-white: #FFFFFF;
+$color-black: #000000;
+$color-text: #102654;
+$color-blue: #003D85;
+$color-ligth-blue: #F8F9FC;
+$color-dark-blue: #103AAE;
+$color-grey: #E8E8E8;
+$color-red: #ED0233;
+$color-dark-navy: #1C3374;
+
+@mixin font ($size, $line) {
+  font-size: $size;
+  line-height: $line;
+}
+
+@mixin list-reset () {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}

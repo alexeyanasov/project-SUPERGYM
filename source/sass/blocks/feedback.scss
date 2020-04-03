@@ -1,0 +1,32 @@
+.feedback {
+  width: 50%;
+  color: $color-white;
+  padding-bottom: 69px;
+}
+
+.feedback h2 {
+  margin-bottom: 41px;
+  margin-top: 68px;
+  font-family: $font-title;
+  @include font (49px, 49px);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+@media (max-width: $tablet-width) {
+  .feedback {
+    width: 100%;
+  }
+
+  .feedback h2 {
+    margin-bottom: 34px;
+    @include font (42px, 42px);
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .feedback h2 {
+    margin-bottom: 36px;
+    @include font (32px, 32px);
+  }
+}

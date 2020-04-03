@@ -1,0 +1,169 @@
+.sales {
+  width: 97%;
+  max-width: 1160px;
+  margin: 0 auto;
+  margin-bottom: 70px;
+  padding: 0;
+}
+
+.sales h2 {
+  margin-bottom: 51px;
+  margin-top: 120px;
+  font-family: $font-title;
+  @include font (49px, 49px);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  color: $color-dark-navy;
+}
+
+.sales__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sales__main {
+  width: 48%;
+  display: flex;
+  color: $color-white;
+  background-color: #6a94e6;
+}
+
+.sales__text {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  min-width: 50%;
+  padding: 25px 44px;
+  padding-bottom: 45px;
+  @include font (18px, 25px);
+  background-color: $color-red;
+}
+
+.sales__title {
+  margin: 8px 0;
+  @include font (28px, 44px);
+  font-weight: 700;
+}
+
+.sales__price {
+  margin-top: -13px;
+  margin-bottom: 1px;
+  @include font (70px, 70px);
+  font-weight: 700;
+}
+
+.sales__img {
+  width: 280px;
+  height: 462px;
+  flex-shrink: 0;
+}
+
+.sales__list {
+  width: 48%;
+}
+
+.sales a {
+  display: inline-table;
+  width: fit-content;
+  margin-top: auto;
+  text-transform: uppercase;
+  @include font (12px, 16px);
+  letter-spacing: 0.05em;
+  font-weight: 700;
+  color: $color-text;
+  background-size: 100% 2px;
+  background-image: linear-gradient(#1C3374, transparent 100%);
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+}
+
+.sales__main a {
+  @include font (14px, 16px);
+  color: $color-white;
+  background-image: linear-gradient($color-white, transparent 100%);
+}
+
+@media (max-width: $tablet-width) {
+  .sales {
+    width: 91%;
+    margin-bottom: 40px;
+  }
+
+  .sales__wrapper {
+    flex-direction: column;
+  }
+
+  .sales h2 {
+    margin-bottom: 41px;
+    margin-top: 100px;
+    @include font (42px, 42px);
+  }
+
+  .sales__img {
+    width: 399px;
+  }
+
+  .sales__img img {
+    width: 399px;
+    height: 462px;
+  }
+
+  .sales__main {
+    width: 100%;
+    margin-bottom: 31px;
+  }
+
+  .sales__list {
+    width: 100%;
+  }
+
+  .sales__text {
+    padding-left: 48px;
+    padding-right: 40px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .sales {
+    width: 91%;
+    min-width: 290px;
+    width: 290px;
+    margin-bottom: 0;
+  }
+
+  .sales h2 {
+    margin-top: 69px;
+    margin-bottom: 44px;
+    @include font (32px, 32px);
+  }
+
+  .sales__img {
+    width: 290px;
+    height: 299px;
+  }
+
+  .sales__img img {
+    width: 290px;
+    height: 299px;
+  }
+
+  .sales__main {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .sales a {
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+
+  .sales__text {
+    min-height: 299px;
+    padding-right: 48px;
+  }
+
+  .sales__content {
+    margin: 12px 0;
+  }
+}

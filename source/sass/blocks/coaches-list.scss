@@ -1,0 +1,88 @@
+.coaches-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  color: $color-white;
+}
+
+.coaches-list__item {
+  position: relative;
+  width: 260px;
+  height: 294px;
+  margin: 30px 20px;
+
+  &:hover .coaches-list__actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    box-shadow: 0px 0px 35px rgba(42, 59, 99, 0.17);
+  }
+}
+
+.coaches-list__img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.coaches-list__actions {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  width: 100%;
+  height: 100%;
+  padding: 51px 30px;
+  @include font(16px, 24px);
+  background: rgba(16, 38, 84, 0.89);
+  z-index: 2;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.coaches-list__actions p {
+  margin: 0;
+}
+
+.coaches-list__coache-name {
+  margin: 0;
+  @include font(18px, 27px);
+  font-weight: 700;
+}
+
+.coaches-list__name {
+  position: absolute;
+  width: 100%;
+  bottom: 7px;
+  @include font(18px, 27px);
+  font-weight: 700;
+  text-align: center;
+}
+
+@media (max-width: $tablet-width) {
+  .coaches-list__item {
+    width: 274px;
+    margin: 30px 17px;
+  }
+
+  .coaches-list__item img {
+    width: 100%;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .coaches-list__item {
+    height: 274px;
+    margin: 30px 20px;
+  }
+
+  .coaches-list__item img {
+    height: 274px;
+  }
+
+  .coaches-list__actions {
+    padding: 43px 11px;
+  }
+}

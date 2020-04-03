@@ -1,0 +1,44 @@
+.responses {
+  width: 97%;
+  max-width: 1160px;
+  margin: 0 auto;
+  margin-bottom: 90px;
+  padding: 0;
+}
+
+.responses h2 {
+  margin-bottom: 20px;
+  margin-top: 120px;
+  font-family: $font-title;
+  @include font (49px, 49px);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  color: $color-text;
+}
+
+@media (max-width: $tablet-width) {
+  .responses {
+    width: 91%;
+    margin-bottom: 71px;
+  }
+
+  .responses h2 {
+    margin-bottom: 44px;
+    @include font (42px, 42px);
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .responses {
+    width: 91%;
+    min-width: 290px;
+    margin-bottom: 38px;
+  }
+
+  .responses h2 {
+    margin-top: 28px;
+    margin-bottom: 13px;
+    @include font (32px, 32px);
+  }
+}

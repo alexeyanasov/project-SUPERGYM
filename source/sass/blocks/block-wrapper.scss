@@ -1,0 +1,36 @@
+.block-wrapper {
+  background-image: linear-gradient(to right, $color-text 50%, transparent 50%);
+  border-top: 1px solid #74819C;
+}
+
+.block-wrapper__columns {
+  width: 97%;
+  max-width: 1160px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: $tablet-width) {
+  .block-wrapper {
+    background-image: linear-gradient(to bottom,#102654 324px, transparent 324px);
+  }
+
+  .block-wrapper__columns {
+    width: 91%;
+    flex-direction: column;
+    padding: 0 90px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .block-wrapper {
+    background-image: linear-gradient(to bottom,#102654 386px, transparent 386px);
+  }
+
+  .block-wrapper__columns {
+    width: 91%;
+    min-width: 290px;
+    padding: 0;
+  }
+}

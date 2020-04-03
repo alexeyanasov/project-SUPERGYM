@@ -1,48 +1,54 @@
 'use strict';
 
-(function () {
-
-  function setCursorPosition(pos, elem) {
-    elem.focus();
-    if (elem.setSelectionRange) {
-      elem.setSelectionRange(pos, pos);
-    } else if (elem.createTextRange) {
-      var range = elem.createTextRange();
-      range.collapse(true);
-      range.moveEnd('character', pos);
-      range.moveStart('character', pos);
-      range.select();
-    }
-  }
-
-  window.vendor = {
-    maskPhone: function (event) {
-      var matrix = '+7 (___) ___ __ __';
-      var i = 0;
-      var def = matrix.replace(/\D/g, '');
-      var val = this.value.replace(/\D/g, '');
-      if (def.length >= val.length) {
-        val = def;
-      }
-      this.value = matrix.replace(/./g, function (a) {
-        var newLocal;
-        if (/[_\d]/.test(a) && i < val.length) {
-          newLocal = val.charAt(i++);
-        } else if (i >= val.length) {
-          newLocal = '';
-        } else {
-          newLocal = a;
-        }
-        return newLocal;
-      });
-      if (event.type === 'blur') {
-        if (this.value.length === 2) {
-          this.value = '';
-        }
-      } else {
-        setCursorPosition(this.value.length, this);
-      }
-    }
+function include(url) {
+  var script = document.createElement('script');
+  script.src = url;
+  document.getElementsByTagName('head')[0].appendChild(script);
+  script.onload = function () {
+    includeSlick('js/slick/slick.min.js');
   };
+  script.onerror = function() {
+    include('js/jquery-3.4.1.js');
+  };
+}
 
-})();
+function includeSlick(url) {
+  var script = document.createElement('script');
+  script.src = url;
+  document.getElementsByTagName('head')[0].appendChild(script);
+  script.onload = function () {
+    $(document).ready(function(){
+      $('.coaches-list').slick({
+        infinite: false,
+        speed: 300,
+        slidesToShow: 4,
+        slidesToScroll: 4,
+         responsive: [
+          {
+            breakpoint: 1199,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2,
+            }
+          },
+          {
+            breakpoint: 767,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+        ]
+      });
+
+      $('.responses-list').slick({
+        infinite: false,
+        speed: 300,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      });
+    });
+  };
+}
+
+include('https://code.jquery.com/jquery-3.4.1.min.js');

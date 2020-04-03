@@ -1,1 +1,45 @@
-@import "blocks/_blocks";
+@import "mixins_variables.scss";
+//
+@import "base/normalize.scss";
+@import "base/fonts.scss";
+@import "base/base.scss";
+@import "base/buttons.scss";
+//
+@import "blocks/main-nav.scss";
+@import "blocks/site-list.scss";
+@import "blocks/social.scss";
+@import "blocks/main-screen.scss";
+@import "blocks/offer-list.scss";
+//
+@import "blocks/gym.scss";
+//
+@import "blocks/subscription.scss";
+@import "blocks/subscription-list.scss";
+//
+@import "blocks/promo.scss";
+//
+@import "blocks/coaches.scss";
+@import "blocks/coaches-list.scss";
+@import "blocks/advances-list.scss";
+@import "blocks/slider.scss";
+//
+@import "blocks/advantages.scss";
+@import "blocks/advantages-list.scss";
+//
+@import "blocks/sales.scss";
+@import "blocks/sales-list.scss";
+//
+@import "blocks/responses.scss";
+@import "blocks/responses-list.scss";
+//
+@import "blocks/block-wrapper.scss";
+//
+@import "blocks/feedback.scss";
+@import "blocks/feedback-form.scss";
+//
+@import "blocks/contacts.scss";
+@import "blocks/contact-list.scss";
+//
+@import "blocks/page-footer.scss";
+@import "blocks/section-list.scss";
+@import "blocks/social-list.scss";

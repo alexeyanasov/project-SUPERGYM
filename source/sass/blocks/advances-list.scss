@@ -1,0 +1,31 @@
+.advances-list {
+  @include list-reset();
+  margin-top: 29px;
+  @include font(14px, 21px);
+  color: $color-white;
+}
+
+.advances-list__item {
+  position: relative;
+  margin-bottom: 13px;
+  padding-left: 41px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: 25px;
+    width: 5px;
+    height: 5px;
+    border: 3px solid $color-white;
+    border-radius: 50%;
+  }
+}
+
+@media (max-width: $tablet-width) {
+
+}
+
+@media (max-width: $mobile-width) {
+
+}

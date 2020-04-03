@@ -1,0 +1,46 @@
+.coaches {
+  width: 97%;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 118px;
+  margin-bottom: 90px;
+}
+
+.coaches h2 {
+  margin-bottom: 22px;
+  padding-left: 21px;
+  font-family: $font-title;
+  @include font (49px, 49px);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $color-text;
+}
+
+@media (max-width: $tablet-width) {
+  .coaches {
+    width: 600px;
+    margin-top: 100px;
+    margin-bottom: 70px;
+  }
+
+  .coaches h2 {
+    margin-bottom: 12px;
+    padding-left: 0;
+    @include font (42px, 42px);
+    text-align: center;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .coaches {
+    width: 270px;
+    min-width: 270px;
+    margin-top: 70px;
+    margin-bottom: 40px;
+  }
+
+  .coaches h2 {
+    margin-bottom: 12px;
+    @include font (32px, 32px);
+  }
+}

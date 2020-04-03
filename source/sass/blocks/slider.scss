@@ -1,0 +1,75 @@
+.slick-prev, .slick-next {
+  position: absolute;
+  top: 50%;
+  display: block;
+  width: 23px;
+  height: 23px;
+  margin-top: -12px;
+  cursor: pointer;
+  color: transparent;
+  border: none;
+  border-top: 1px solid #AFAFAF;
+  border-left: 1px solid #AFAFAF;
+  outline: none;
+  background: transparent;
+}
+
+.slick-prev::before, .slick-next::before {
+  content: none;
+}
+
+.slick-prev {
+  left: -32px;
+  transform: rotate(-45deg);
+}
+
+.slick-next {
+  right: -32px;
+  transform: rotate(135deg);
+}
+
+.slick-disabled {
+  opacity: 0.3;
+}
+
+.responses-list .slick-prev {
+  left: -18px;
+}
+
+.responses-list .slick-next {
+  right: -18px;
+}
+
+@media (max-width: $tablet-width) {
+  .slick-prev {
+    left: -36px;
+  }
+
+  .slick-next {
+    right: -36px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .slick-prev, .slick-next {
+    width: 15px;
+    height: 15px;
+    margin-top: -7px;
+  }
+
+  .slick-prev {
+    left: -7px;
+  }
+
+  .slick-next {
+    right: -7px;
+  }
+
+  .responses-list .slick-prev {
+    left: 4px;
+  }
+
+  .responses-list .slick-next {
+    right: 4px;
+  }
+}
